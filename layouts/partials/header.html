@@ -7,18 +7,14 @@
 
 <section class="header"> 
     <div class="container">
+        <a href="/"><img class="logo" src="images/logo.png" /></a>
         <div class="content">
-            {{ if .Site.Params.gravatar }}
-              <a href="/"><img class="avatar" src="https://gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=50" /></a>
-            {{ else if .Site.Params.avatar }}
-              <a href="/"><img class="avatar" src="/{{ .Site.Params.avatar }}" /></a>
-            {{ end }}
-            <a href="/"><div class="name">{{ .Site.Params.author }}</div></a>
+            <a href="/"><div class="name">{{ .Site.Title }}</div></a>
             <nav>
                 <ul>
                     <a href="/blog/"><li>Blog</li></a>
                     <a href="/about/"><li>About</li></a>
-                    <a href="/code/"><li>Code</li></a>
+                    <a href="/projects/"><li>Projects</li></a>
                 </ul>
             </nav>
         </div>
