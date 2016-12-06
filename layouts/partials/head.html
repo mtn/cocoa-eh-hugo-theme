@@ -3,10 +3,10 @@
 <base href="{{ .Site.BaseURL }}">
 <title>
 {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-{{ if eq $url "/" }}
+{{ if eq $url "" }}
     {{ .Site.Title }}
 {{ else }}
-    {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
+    {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Site.Title }} - {{ .Title }} {{ end }}
 {{ end }}
 </title>
 <link rel="canonical" href="{{ .Permalink }}">
