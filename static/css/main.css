@@ -201,7 +201,6 @@ section.header .name {
   color: #555555;
 }
 section.header nav {
-  font-size: 14px;
   margin-bottom: 16px;
   text-transform: uppercase;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
@@ -228,6 +227,7 @@ section.header nav ul a:last-child {
 section.header nav ul li {
   color: #555555;
   font-weight: 500;
+  font-size: 14px;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -245,6 +245,17 @@ section.header nav ul li:hover {
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
     justify-content: flex-start;
+  }
+  section.header-home .container .logo {
+    max-width: 180px;
+    margin-left: 20px;
+  }
+  section.header-home .name-home {
+    padding-top: 30px;
+    font-size: 40px;
+  }
+  section.header-home nav ul li {
+    font-size: 18px;
   }
   section.header .content {
     -webkit-align-items: flex-start;
@@ -517,6 +528,13 @@ section.icons {
 section.main {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+section.main .container .content .post-item .meta {
+    display: block;
+}
+section.main .container .content .post-item {
+    display: flex;
+    list-style: none;
 }
 @media (min-width: 600px) {
   .container {

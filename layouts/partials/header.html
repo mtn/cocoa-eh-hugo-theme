@@ -5,14 +5,19 @@
 
 <body lang="{{ .Site.Params.lang }}">
 
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ if eq $url "" }}
+<section class="header header-home"> 
+{{ else }}
 <section class="header"> 
+{{ end }}
     <div class="container">
         <a href="/"><img class="logo" src="images/logo.png" /></a>
         <div class="content">
-            <a href="/"><div class="name">{{ .Site.Title }}</div></a>
+            <a href="/"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
             <nav>
                 <ul>
-                    <a href="/blog/"><li>Blog</li></a>
+                    <a href="/"><li>Blog</li></a>
                     <a href="/about/"><li>About</li></a>
                     <a href="/projects/"><li>Projects</li></a>
                 </ul>
