@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:500);
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @font-face {
   font-family: 'Nexa Bold';
   src: url('../fonts/Nexa Bold.otf');
@@ -662,6 +663,11 @@ section.main .content .markdown a code:hover {
 section.main .content .markdown p {
   /* Invoked by line break */
   font-size: 1rem;
+  line-height: 1.75em;
+  color: #313537;
+  letter-spacing: 0.01rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
   margin-top: 0;
   margin-bottom: 1em;
 }
