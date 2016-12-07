@@ -595,11 +595,9 @@ section.main .content .markdown h3,
 section.main .content .markdown h4,
 section.main .content .markdown h5,
 section.main .content .markdown h6 {
-  font-size: 18px;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 22px;
   letter-spacing: -0.005rem;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
