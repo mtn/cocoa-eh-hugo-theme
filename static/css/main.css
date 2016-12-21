@@ -185,6 +185,9 @@ section.header .content {
   -ms-align-items: center;
   align-items: center;
 }
+section.header .container > a:first-child {
+  -webkit-flex:1 0 auto;
+}
 section.header .container .logo {
   max-width: 100px;
 }
