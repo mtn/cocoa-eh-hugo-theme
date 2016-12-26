@@ -12,14 +12,14 @@
 <section class="header"> 
 {{ end }}
     <div class="container">
-        <a href="/"><img class="logo" src="/{{ .Site.Params.logofile }}" /></a>
+        <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" /></a>
         <div class="content">
-            <a href="/"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
+            <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
             <nav>
                 <ul>
-                    <a href="/"><li>Blog</li></a>
-                    <a href="/about/"><li>About</li></a>
-                    <a href="/projects/"><li>Projects</li></a>
+                    <a href="{{ .Site.BaseURL }}"><li>Blog</li></a>
+                    <a href="{{ .Site.BaseURL }}/about/"><li>About</li></a>
+                    <a href="{{ .Site.BaseURL }}/projects/"><li>Projects</li></a>
                 </ul>
             </nav>
         </div>
