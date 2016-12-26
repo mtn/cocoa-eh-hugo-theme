@@ -11,7 +11,16 @@ A [Demo](https://kodewolf.com) is available.
 * Disqus support
 * Built-in support for 404 pages
 * Syntax highlighting
-* Can display a logo
+* Logo and title in the header for a clear identity
+
+#### Differences from the original Cocoa
+
+This theme is less minimalist than the original Cocoa, with some new features :
+
+* Displays a logo on the side of the header, and there is a title different from the author name.
+* Fonts are different : stronger and sharper, with a clear identity.
+* The font size in articles is higher, the text justified and lines are more spaced.
+* On mobile : display the date next to article's titles.
 
 <img src="/images/screenshot.png" width="800">
 
