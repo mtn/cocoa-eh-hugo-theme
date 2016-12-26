@@ -157,9 +157,6 @@ section.main {
     order: 1;
   }
 }
-section.header {
-  background-color: #f7f7f7;
-}
 section.header .container {
   -webkit-align-items: center;
   -moz-align-items: center;
@@ -197,7 +194,6 @@ section.header .name {
   font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
-  font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -283,9 +279,6 @@ section.header nav ul li:hover {
   section.header nav ul li:hover {
     color: #333333;
   }
-}
-section.icons {
-  background-color: #f7f7f7;
 }
 section.icons .container {
   -webkit-align-items: center;
@@ -515,19 +508,18 @@ section.main .container .content .post-item .meta {
   color: #666666;
   display: none;
   min-width: 100px;
-  text-align: right;
-  margin-right: 16px;
 }
 section {
   padding: 0 16px;
 }
 section.header {
-  padding-top: 32px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+}
+section.header-home {
+  padding-top: 36px;
 }
 section.icons {
   padding-top: 0;
-  padding-bottom: 32px;
 }
 section.main {
   padding-top: 32px;
@@ -664,8 +656,8 @@ section.main .content .markdown a code:hover {
   text-decoration: underline;
 }
 section.main .content .markdown p {
-  /* Invoked by line break */
-  font-size: 1.2em;
+  font-size: 1em;
+  text-align: justify;
   line-height: 1.75em;
   color: #313537;
   letter-spacing: 0.01rem;
@@ -730,6 +722,8 @@ section.main .content .markdown blockquote p:last-child {
     padding-right: 5rem;
     padding-left: 1.25rem;
   }
+  section.main .content .markdown p {
+  font-size: 1.2em;
 }
 section.main .content .markdown img {
   margin: 1rem 0;
