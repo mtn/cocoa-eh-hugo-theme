@@ -2,6 +2,8 @@
 
 A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typograhy. This is a fork from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements.
 
+A [Demo](https://kodewolf.com) is available.
+
 #### Features
 
 * Responsive
