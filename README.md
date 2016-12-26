@@ -11,6 +11,7 @@ A [Demo](https://kodewolf.com) is available.
 * Disqus support
 * Built-in support for 404 pages
 * Syntax highlighting
+* Can display a logo
 
 <img src="/images/screenshot.png" width="800">
 
@@ -66,6 +67,16 @@ $ hugo new fixed/about.md
 An example site is available in `exampleSite/`.
 
 ## Changelog
+
+> v0.4.0
+
+- Add logo and a title in header instead of only the author name
+- Change pages from the navigation
+- Delete useless icons from the bottom
+- Change fonts and style the text (font size, justify ...)
+- Improve mobile design by adding dates, removing grey background and adapt font
+
+And more.
 
 > v0.3.0
 
