@@ -12,7 +12,7 @@ A [Demo](https://kodewolf.com) is available.
 * Built-in support for 404 pages
 * Syntax highlighting
 
-<img src="http://i.imgur.com/jdstF9j.png" width="800">
+<img src="/images/screenshot.png" width="800">
 
 # Table of Contents
 
@@ -25,23 +25,23 @@ A [Demo](https://kodewolf.com) is available.
 
 ## Getting Started 
 
-From the root of your Hugo site, clone the theme into `themes/cocoa` by running:
+From the root of your Hugo site, clone the theme into `themes/cocoa-eh` by running:
 
 ````
-git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa
+git clone https://github.com/fuegowolf/cocoa-eh-hugo-theme.git themes/cocoa-eh
 ````
 
 Then, generate your site's files by running:
 
 ````
-hugo -t cocoa
+hugo -t cocoa-eh
 ````
 
 ## Usage
 
 #### config.toml
 
-Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml) in `exampleSite/`.
+Please see the sample [`config.toml`](https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/exampleSite/config.toml) in `exampleSite/`.
 
 Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml`. (like in the sample)
 
@@ -64,10 +64,6 @@ $ hugo new fixed/about.md
 #### Example site
 
 An example site is available in `exampleSite/`.
-
-## Screenshots
-
-See this [Imgur album](http://imgur.com/a/skabh) or the [`images/`](https://github.com/nishanths/cocoa-hugo-theme/tree/master/images) directory!
 
 ## Changelog
 
@@ -102,4 +98,4 @@ Pull requests, bug fixes, and new features are welcome!
 
 ## License
 
-Licensed under the MIT License. See the [LICENSE](https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE.md) file for more details.
+Licensed under the MIT License. See the [LICENSE](https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE.md) file for more details.
