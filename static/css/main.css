@@ -513,12 +513,13 @@ section {
   padding: 0 16px;
 }
 section.header {
-  padding-top: 32px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+}
+section.header-home {
+  padding-top: 36px;
 }
 section.icons {
   padding-top: 0;
-  padding-bottom: 32px;
 }
 section.main {
   padding-top: 32px;
