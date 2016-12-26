@@ -1,12 +1,12 @@
 name = "Cocoa"
 license = "MIT"
-licenselink = "https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE.md"
+licenselink = "https://github.com/fuegowolf/cocoa-hugo-theme/blob/master/LICENSE.md"
 description = "Consistent, responsive theme with clean typography"
-homepage = "https://github.com/nishanths"
+homepage = "https://github.com/fuegowolf"
 tags = ["open-sans", "minimal", "clean", "ionicons", "comments"]
 features = ["blog", "responsive", "404", "icons", "disqus", "metadata"]
 min_version = 0.15
 
 [author]
-  name = "Nishanth Shanmugham"
-  homepage = "https://github.com/nishanths"
+  name = "Alexis Tacnet"
+  homepage = "https://github.com/fuegowolf"
