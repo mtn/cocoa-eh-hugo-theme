@@ -1,7 +1,7 @@
-name = "Cocoa"
+name = "Cocoa-EH"
 license = "MIT"
 licenselink = "https://github.com/fuegowolf/cocoa-hugo-theme/blob/master/LICENSE.md"
-description = "Consistent, responsive theme with clean typography"
+description = "A enhanced version of Cocoa. Consistent, responsive theme with clean typography"
 homepage = "https://github.com/fuegowolf"
 tags = ["open-sans", "minimal", "clean", "ionicons", "comments"]
 features = ["blog", "responsive", "404", "icons", "disqus", "metadata"]
@@ -12,6 +12,6 @@ min_version = 0.15
   homepage = "https://github.com/fuegowolf"
 
 [original]
-      name = "Nishanth Shanmugham"
+    name = "Nishanth Shanmugham"
     homepage = "https://github.com/nishanths"
-    repo = "https://www.github.com/mnishanths/cocoa-hugo-theme"
+    repo = "https://www.github.com/nishanths/cocoa-hugo-theme"
