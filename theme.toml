@@ -10,3 +10,8 @@ min_version = 0.15
 [author]
   name = "Alexis Tacnet"
   homepage = "https://github.com/fuegowolf"
+
+[original]
+      name = "Nishanth Shanmugham"
+    homepage = "https://github.com/nishanths"
+    repo = "https://www.github.com/mnishanths/cocoa-hugo-theme"
