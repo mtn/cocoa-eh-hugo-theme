@@ -22,7 +22,7 @@ This theme is less minimalist than the original Cocoa, with some new features :
 * The font size in articles is higher, the text justified and lines are more spaced.
 * On mobile : display the date next to article's titles.
 
-<img src="https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/images/screenshot.png" width="800">
+<img src="https://raw.githubusercontent.com/fuegowolf/cocoa-eh-hugo-theme/master/images/screenshot.png" width="800">
 
 # Table of Contents
 
