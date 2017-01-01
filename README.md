@@ -44,7 +44,7 @@ git clone https://github.com/fuegowolf/cocoa-eh-hugo-theme.git themes/cocoa-eh
 Then, generate your site's files by running:
 
 ````
-hugo -t cocoa-eh
+hugo new site cocoa-eh
 ````
 
 ## Usage
