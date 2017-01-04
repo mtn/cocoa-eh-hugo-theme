@@ -10,6 +10,7 @@
                     {{ end }}
                 {{ end }}
             </div>
+            {{ if ne (len (where .Data.Pages "Title" "!=" $globalTitle)) 0}}
             <div class="page-heading">{{ .Title }}</div>
             <ul>
                 {{ range .Data.Pages.ByPublishDate }}
@@ -18,6 +19,7 @@
                     {{ end }}
                 {{ end }}
             </ul>
+            {{ end }}
         </div>
     </div>
 </section>
