@@ -2,10 +2,17 @@
 <section class="main">
     <div class="container">
         <div class="content">
-            <div class="page-heading">Blog</div>
+            {{ range where .Data.Pages "Title" "Home"}}
+                <div class="markdown">
+                {{ .Content }}
+                </div>
+            {{ end }}
+
             <ul>
-            {{ range .Data.Pages.ByPublishDate }}
-                {{ if eq .Section "blog" }}
+            {{ range first 5 (.Data.Pages.GroupByDate "Jan, 2006" "desc")}}
+                {{ $nbPages := len (where .Pages "Section" "blog")}}
+                {{ if ne $nbPages 0}}{{ .Key }}{{ end }}
+                {{ range where .Pages.ByPublishDate "Section" "blog"}}
                     {{ partial "li.html" . }}
                 {{ end }}
             {{ end }}
