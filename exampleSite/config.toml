@@ -8,17 +8,13 @@ layoutdir = "layouts"
 publishdir = "public"
 author = "Alexis Tacnet"
 title = "Cocoa Enhanced"
-pygmentsuseclasses = true
 disqusshortname = ""
 pluralizelisttitles = false
 
 [permalinks]
-fixed = ":title/"
 blog = "blog/:slug/"
 
 [params]
-author = "Alexis Tacnet"
-cachebuster = true
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Example blog"

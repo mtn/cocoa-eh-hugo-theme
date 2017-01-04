@@ -2,14 +2,28 @@
 <section class="main">
     <div class="container">
         <div class="content">
-            <div class="page-heading">Blog</div>
+            {{ range where .Data.Pages "Title" "Home"}}
+                <div class="markdown">
+                {{ .Content }}
+                </div>
+            {{ end }}
+
             <ul>
-            {{ range .Data.Pages.ByPublishDate }}
-                {{ if eq .Section "blog" }}
+            {{ range first 5 (.Data.Pages.GroupByDate "Jan, 2006" "desc")}}
+                {{ $nbPages := len (where .Pages "Section" "blog")}}
+                {{ if ne $nbPages 0}}
+                    <li class="groupby">{{ .Key }}</li>
+                {{ end }}
+                {{ range where .Pages.ByPublishDate "Section" "blog"}}
                     {{ partial "li.html" . }}
                 {{ end }}
             {{ end }}
             </ul>
+
+            {{ $nbTotalGroup := len (.Data.Pages.GroupByDate "Jan, 2006" "desc")}}
+            {{ if gt $nbTotalGroup 5}}
+                <a href="./blog/" class="see-more">See more ...</a>
+            {{ end }}
         </div>
     </div>
 </section>

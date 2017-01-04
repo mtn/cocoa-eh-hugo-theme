@@ -6,7 +6,6 @@
             <div class="front-matter">
                 <div class="title-container">
                     {{ partial "page-heading" . }}
-                    <div class="initials"><a href="{{ .Site.BaseURL }}">KW</a></div>
                 </div>
                 <div class="meta">
                     <div class="date" title="{{ .Date.Format .Site.Params.dateformfull }}">{{ .Date.Format .Site.Params.dateform }}</div>
@@ -16,7 +15,7 @@
             <div class="markdown">
                 {{ .Content }}
                 <br>
-                <p><a href="/">Back to posts</a></p>
+                <p><a href="{{ .Section }}">Back to posts</a></p>
             </div>
             <br>
             <div class="disqus">
