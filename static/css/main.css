@@ -513,6 +513,16 @@ section.main .container .content .post-item .meta {
   display: none;
   min-width: 100px;
 }
+section.main .container .content .see-more {
+  font-style: italic;
+  float: right;
+  font-size: 0.9em;
+  margin-top: 2em;
+  color: #313537;
+}
+section.main .container .content .see-more:hover {
+  color: #666;
+}
 section {
   padding: 0 16px;
 }
