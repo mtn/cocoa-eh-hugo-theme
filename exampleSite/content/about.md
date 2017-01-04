@@ -9,6 +9,4 @@ Along with [Ford Prefect](https://en.wikipedia.org/wiki/Ford_Prefect_\(character
  
 > He rather enjoys tea, but seems to have trouble obtaining it in the far reaches of the galaxy.  
  
-In time, he learns how to fly and carves a niche for himself as a sandwich-maker. 
- 
-<img src="//placehold.it/300x300" class="profile"> 
+In time, he learns how to fly and carves a niche for himself as a sandwich-maker.
