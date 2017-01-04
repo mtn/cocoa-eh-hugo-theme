@@ -490,6 +490,10 @@ section.main .container.f04 .content .detail {
     margin-bottom: 30px;
   }
 }
+section.main .container .content .groupby {
+  margin-top: 1em;
+  padding-left: 0.5em;
+}
 section.main .container .content .post-item {
   display: -webkit-flex;
   display: -moz-flex;

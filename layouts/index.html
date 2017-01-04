@@ -11,7 +11,9 @@
             <ul>
             {{ range first 5 (.Data.Pages.GroupByDate "Jan, 2006" "desc")}}
                 {{ $nbPages := len (where .Pages "Section" "blog")}}
-                {{ if ne $nbPages 0}}{{ .Key }}{{ end }}
+                {{ if ne $nbPages 0}}
+                    <li class="groupby">{{ .Key }}</li>
+                {{ end }}
                 {{ range where .Pages.ByPublishDate "Section" "blog"}}
                     {{ partial "li.html" . }}
                 {{ end }}

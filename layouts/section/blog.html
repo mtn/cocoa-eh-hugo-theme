@@ -5,7 +5,7 @@
             <div class="page-heading">Blog</div>
             <ul>
                 {{ range .Data.Pages.GroupByDate "Jan, 2006" "desc"}}
-                    {{ .Key }}
+                    <li class="groupby">{{ .Key }}</li>
                     {{ range .Pages.ByPublishDate }}
                         {{ partial "li.html" . }}
                     {{ end }}
