@@ -16,9 +16,12 @@
             <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
             <nav>
                 <ul>
+                    <a href="{{ .Site.BaseURL }}blog/"><li>Blog</li></a>
                     {{ range .Site.Sections }}
-                        {{ range first 1 .Pages }}
+                        {{ range first 1 (where .Pages "Section" "ne" "")}}
+                            {{ if ne .Section "blog"}}
                             <a href="{{ .Section | urlize }}"><li>{{ .Section }}</li></a>
+                            {{ end }}
                         {{ end }}
                     {{ end }}
                     {{ range where .Site.Pages "Section" ""}}
