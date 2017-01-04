@@ -10,14 +10,18 @@ A [Demo](https://kodewolf.com) is available.
 * Suited for blogging and personal webpages
 * Disqus support
 * Built-in support for 404 pages
-* Syntax highlighting
+* Syntax highlighting with hightlightjs
 * Logo and title in the header for a clear identity
+* Possibility to have sections with a header and a list of articles
+* Possibility to have single pages
 
 #### Differences from the original Cocoa
 
 This theme is less minimalist than the original Cocoa, with some new features :
 
 * Displays a logo on the side of the header, and there is a title different from the author name.
+* Very modulable with sections and single pages.
+* Group articles by month and year
 * Fonts are different : stronger and sharper, with a clear identity.
 * The font size in articles is higher, the text justified and lines are more spaced.
 * On mobile : display the date next to article's titles.
@@ -55,20 +59,46 @@ Please see the sample [`config.toml`](https://github.com/fuegowolf/cocoa-eh-hugo
 
 Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml`. (like in the sample)
 
-#### Creating Content
+#### Blog posts
 
-* Posts should generally go under a `content/blog` directory. Typically you would run:
+The core of this theme is a **Blog**. The last 5 months with articles will be displayed on the [homepage](#homepage), and all articles will be available in the `blog` section.
+
+If you want to add a post, just type :
 
 ````
 hugo new blog/your-new-post.md
 ````
 
-You may need to set `draft = false` in the new post's front matter for it to appear on your site.
+#### Homepage
 
-* Fixed pages such as an About page should preferably go under a `content/fixed` or be present at the root of the `contents` directory.
+The homepage is meant to display few articles and the `home.md` post, which should be in the root of the folder. If you don't want to display something special on the front page, just don't create this file. If you want to add text before the article list :
 
 ````
-$ hugo new fixed/about.md
+hugo new home.md
+````
+
+#### Sections
+
+You can add **Sections** like Projects or Talks by adding a directory with the name of the section. They will be automatically in the header.
+
+* If you only want a list with articles, just create an article :
+
+````
+hugo new projects/my-project.md
+````
+
+* If you want to add a header to you section, with some markdown too, create an article with the same name as your section.
+
+````
+$ hugo new projects/projects.md
+````
+
+#### Single pages
+
+If you want to add a small page like an About one, just create an article in the root. It will be automatically added to the header too.
+
+````
+$ hugo new about.md
 ````
 
 #### Example site
@@ -76,6 +106,16 @@ $ hugo new fixed/about.md
 An example site is available in `exampleSite/`.
 
 ## Changelog
+
+> v0.5.0
+
+- Add an automatic way to add sections
+- Add the possibility to add a header to a section list page
+- Add an automatic way to add single pages
+- Group blog articles by month and year
+- Add a homepage with the possibility of adding a small text and few articles
+- Update hightlightjs to v9.9.0
+- Few deletions of obsolete lines
 
 > v0.4.0
 
