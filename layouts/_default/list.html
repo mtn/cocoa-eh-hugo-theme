@@ -2,14 +2,23 @@
 <section class="main">
     <div class="container">
         <div class="content">
+            {{ $globalTitle := .Title}}
+            <div class="markdown">
+                {{ range .Data.Pages }}
+                    {{ if eq .Title $globalTitle }}
+                        {{ .Content }}
+                    {{ end }}
+                {{ end }}
+            </div>
             <div class="page-heading">{{ .Title }}</div>
             <ul>
                 {{ range .Data.Pages.ByPublishDate }}
-                    {{ partial "li.html" . }}
+                    {{ if ne .Title $globalTitle }}
+                        {{ partial "li.html" . }}
+                    {{ end }}
                 {{ end }}
             </ul>
         </div>
     </div>
 </section>
 {{ partial "footer.html" . }}
-
