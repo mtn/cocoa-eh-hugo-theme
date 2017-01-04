@@ -5,8 +5,7 @@
 
 <body lang="{{ .Site.Params.lang }}">
 
-{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-{{ if eq $url "" }}
+{{ if .IsHome }}
 <section class="header header-home"> 
 {{ else }}
 <section class="header"> 
