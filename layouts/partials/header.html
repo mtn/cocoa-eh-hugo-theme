@@ -24,7 +24,7 @@
                             {{ end }}
                         {{ end }}
                     {{ end }}
-                    {{ range where .Site.Pages "Section" ""}}
+                    {{ range where .Site.RegularPages "Section" ""}}
                         {{ if ne .Title "Home"}}
                             <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
                         {{ end }}
