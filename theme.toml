@@ -5,7 +5,7 @@ description = "A enhanced version of Cocoa. Consistent, responsive theme with cl
 homepage = "https://github.com/fuegowolf/cocoa-eh-hugo-theme"
 tags = ["open-sans", "minimal", "clean", "ionicons", "comments"]
 features = ["blog", "responsive", "404", "icons", "disqus", "metadata"]
-min_version = 0.15
+min_version = 0.18
 
 [author]
     name = "Alexis Tacnet"
