@@ -42,19 +42,19 @@
         <div class="content">
 
         {{ if .Site.Params.github }}
-            <a href="{{ .Site.Params.github }}" target="_blank">
+            <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
                 <i class="icon ion-social-github"></i>
             </a>
         {{ end }}
         
         {{ if .Site.Params.twitter }}
-            <a href="{{ .Site.Params.twitter }}" target="_blank">
+            <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
                 <i class="icon ion-social-twitter"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.linkedin }}
-            <a href="{{ .Site.Params.linkedin }}" target="_blank">
+            <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
                 <i class="icon ion-social-linkedin"></i>
             </a>
         {{ end }}
