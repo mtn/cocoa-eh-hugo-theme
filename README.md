@@ -1,10 +1,39 @@
 # Cocoa Enhanced
 
-A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typograhy. This is a fork from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements.
+A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typograhy. This is a fork from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements. A demo is available [here](https://kodewolf.com).
 
-A [Demo](https://kodewolf.com) is available.
+You can use this theme either for your blog or your personnal website.
 
-#### Features
+<img src="https://raw.githubusercontent.com/fuegowolf/cocoa-eh-hugo-theme/master/images/screenshot.png" width="800">
+
+# Table of Contents
+
+* [Getting Started](#getting-started)
+* [Features](#features)
+* [Usage](#usage)
+* [Screenshots](#screenshots)
+* [Changelog](#changelog)
+* [Contributing](#contributing)
+* [License](#license)
+
+## Getting Started 
+
+From the root of your Hugo site, clone the theme into `themes/cocoa-eh` by running:
+
+````
+git clone https://github.com/fuegowolf/cocoa-eh-hugo-theme.git themes/cocoa-eh
+````
+
+Then, generate your site's files by running:
+
+````
+hugo -t cocoa-eh
+````
+
+If you want a simple blog you can just use the `exampleSite`, however if you desire a more 
+complex website you can build it with the [Usage](#usage) section.
+
+## Features
 
 * Responsive
 * Suited for blogging and personal webpages
@@ -26,31 +55,6 @@ This theme is less minimalist than the original Cocoa, with some new features :
 * The font size in articles is higher, the text justified and lines are more spaced.
 * On mobile : display the date next to article's titles.
 
-<img src="https://raw.githubusercontent.com/fuegowolf/cocoa-eh-hugo-theme/master/images/screenshot.png" width="800">
-
-# Table of Contents
-
-* [Getting Started](#getting-started)
-* [Usage](#usage)
-* [Screenshots](#screenshots)
-* [Changelog](#changelog)
-* [Contributing](#contributing)
-* [License](#license)
-
-## Getting Started 
-
-From the root of your Hugo site, clone the theme into `themes/cocoa-eh` by running:
-
-````
-git clone https://github.com/fuegowolf/cocoa-eh-hugo-theme.git themes/cocoa-eh
-````
-
-Then, generate your site's files by running:
-
-````
-hugo -t cocoa-eh
-````
-
 ## Usage
 
 #### config.toml
@@ -61,9 +65,9 @@ Note that if you already use cocoa but have updated to Hugo 0.18, you must lower
 
 #### Blog posts
 
-The core of this theme is a **Blog**. The last 5 months with articles will be displayed on the [homepage](#homepage), and all articles will be available in the `blog` section.
+The core of this theme is a **Blog**, but you can decide to not have this section if you want a personnal website for example. The last 5 months with articles will be displayed on the [homepage](#homepage), and all articles will be available in the `blog` section.
 
-If you want to add a post, just type :
+If you want to add a blog section and a post, just type :
 
 ````
 hugo new blog/your-new-post.md
@@ -71,7 +75,7 @@ hugo new blog/your-new-post.md
 
 #### Homepage
 
-The homepage is meant to display few articles and the `home.md` post, which should be in the root of the folder. If you don't want to display something special on the front page, just don't create this file. If you want to add text before the article list :
+The homepage is meant to display few articles or a description of yourself and the `home.md` post, which should be in the root of the folder. If you don't want to display something special on the front page, just don't create this file. If you want to add text before the article list :
 
 ````
 hugo new home.md
@@ -100,10 +104,6 @@ If you want to add a small page like an About one, just create an article in the
 ````
 $ hugo new about.md
 ````
-
-#### Example site
-
-An example site is available in `exampleSite/`.
 
 ## Changelog
 
