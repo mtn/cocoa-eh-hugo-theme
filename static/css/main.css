@@ -749,24 +749,19 @@ section.main .content .markdown figure img {
   position: static;
   margin: auto;
 }
-@media (min-width: 376px) {
+@media (min-width: 321px) {
   section.main .content .markdown figure {
     height: 140px;
   }
 }
-@media (min-width: 426px) {
-  section.main .content .markdown figure {
-    height: 150px;
-  }
-}
 @media (min-width: 550px) {
   section.main .content .markdown figure {
-    height: 200px;
+    height: 220px;
   }
 }
 @media (min-width: 769px) {
   section.main .content .markdown figure {
-    height: 269px;
+    height: 241px;
     width: 110%;
     margin-left: -5%;
   }
