@@ -583,6 +583,9 @@ a {
 a:hover {
   color: #2a6496;
 }
+img {
+  max-width: 100%;
+}
 img.profile {
   min-width: 100%;
 }
@@ -736,36 +739,25 @@ section.main .content .markdown blockquote p:last-child {
   }
 }
 section.main .content .markdown figure {
-  height: 100px;
   width: 100%;
   background: #fff;
   margin-bottom: 1em;
 }
 section.main .content .markdown figure img {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
   max-width: 100%;
   display: block;
   position: static;
   margin: auto;
 }
-@media (min-width: 321px) {
-  section.main .content .markdown figure {
-    height: 140px;
-  }
-}
-@media (min-width: 550px) {
-  section.main .content .markdown figure {
-    height: 220px;
-  }
-}
 @media (min-width: 769px) {
   section.main .content .markdown figure {
-    height: 241px;
     width: 110%;
     margin-left: -5%;
   }
   section.main .content .markdown img {
+    max-width: 110%;
     width: 110%;
     margin-left: -5%;
   }
