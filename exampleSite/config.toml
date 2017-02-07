@@ -21,6 +21,7 @@ description = "Example blog"
 logofile = "img/logo.png"
 faviconfile = "img/logo.png"
 highlightjs = true
+progressively = true
 lang = "en"
 github = "example"
 email = "you@example.com"
