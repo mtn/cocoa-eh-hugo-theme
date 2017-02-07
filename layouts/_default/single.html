@@ -4,7 +4,11 @@
         <div class="content">
             {{ partial "page-heading.html" . }}
             <div class="markdown">
-                {{ .Content }}
+                {{ if .Site.Params.progressively }}
+                    {{ .Content | replaceRE "<img src=(.*)\\/(.*) alt=(.*)>" "<figure class=\"progressive\"><img class=\"progressive__img progressive--not-loaded\" data-progressive=$1/high/$2 src=$1/low/$2 alt=$3></figure>" | safeHTML }}
+                {{ else }}
+                    {{ .Content }}
+                {{ end }}
             </div>
         </div>
     </div>

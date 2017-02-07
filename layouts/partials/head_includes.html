@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/reset.css">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
 
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/progressively.min.css">
+{{ if .Site.Params.progressively }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/progressively.min.css">
+{{ end }}
 
 {{range .Site.Params.extracssfiles}}
     <link rel="stylesheet" href="{{.}}">

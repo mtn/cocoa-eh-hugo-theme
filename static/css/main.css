@@ -583,9 +583,6 @@ a {
 a:hover {
   color: #2a6496;
 }
-img {
-  max-width: 100%;
-}
 img.profile {
   min-width: 100%;
 }
@@ -747,6 +744,7 @@ section.main .content .markdown figure {
 section.main .content .markdown figure img {
   height: 100%;
   width: auto;
+  max-width: 100%;
   display: block;
   position: static;
   margin: auto;
@@ -769,6 +767,10 @@ section.main .content .markdown figure img {
 @media (min-width: 769px) {
   section.main .content .markdown figure {
     height: 269px;
+    width: 110%;
+    margin-left: -5%;
+  }
+  section.main .content .markdown img {
     width: 110%;
     margin-left: -5%;
   }

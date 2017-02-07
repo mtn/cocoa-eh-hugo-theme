@@ -9,7 +9,9 @@
   </script>
 {{ end }}
 
-<script src="{{ .Site.BaseURL }}js/progressively.min.js"></script>
-<script>
+{{ if .Site.Params.progressively }}
+  <script src="{{ .Site.BaseURL }}js/progressively.min.js"></script>
+  <script>
     progressively.init({delay: 50, throttle: 300});
-</script>
+  </script>
+{{ end }}
