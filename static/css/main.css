@@ -754,12 +754,12 @@ section.main .content .markdown figure img {
 @media (min-width: 769px) {
   section.main .content .markdown figure {
     width: 110%;
-    margin-left: -5%;
+    margin-left: -4%;
   }
   section.main .content .markdown img {
     max-width: 110%;
     width: 110%;
-    margin-left: -5%;
+    margin-left: -4%;
   }
 }
 section.main .content .markdown table {
