@@ -35,14 +35,15 @@ complex website you can build it with the [Usage](#usage) section.
 
 ## Features
 
-* Responsive
-* Suited for blogging and personal webpages
-* Disqus support
-* Built-in support for 404 pages
-* Syntax highlighting with hightlightjs
-* Logo and title in the header for a clear identity
-* Possibility to have sections with a header and a list of articles
-* Possibility to have single pages
+* Responsive.
+* Suited for blogging and personal webpages.
+* Disqus support.
+* Built-in support for 404 pages.
+* Syntax highlighting with hightlightjs.
+* Progressive images.
+* Logo and title in the header for a clear identity.
+* Possibility to have sections with a header and a list of articles.
+* Possibility to have single pages.
 
 #### Differences from the original Cocoa
 
@@ -50,7 +51,8 @@ This theme is less minimalist than the original Cocoa, with some new features :
 
 * Displays a logo on the side of the header, and there is a title different from the author name.
 * Very modulable with sections and single pages.
-* Group articles by month and year
+* Group articles by month and year.
+* Progressive images.
 * Fonts are different : stronger and sharper, with a clear identity.
 * The font size in articles is higher, the text justified and lines are more spaced.
 * On mobile : display the date next to article's titles.
@@ -105,7 +107,30 @@ If you want to add a small page like an About one, just create an article in the
 $ hugo new about.md
 ````
 
+#### Progressive images
+
+You can activate the defering of images with this line in the `config.toml` : 
+
+```
+progressively = true
+```
+
+And call images in markdown like usual : 
+
+```
+![image](./images/image.jpg)
+```
+
+This will call the `./images/low/image.jpg` image and the `./images/high/image.jpg`.
+
+
 ## Changelog
+
+> v0.6.0
+
+- Add progressive loading of images
+- Redesign image display
+- Clean up a bit the example website
 
 > v0.5.0
 
