@@ -769,7 +769,8 @@ section.main .content .markdown figure img {
 @media (min-width: 769px) {
   section.main .content .markdown figure {
     height: 269px;
-    width: 100%;
+    width: 110%;
+    margin-left: -5%;
   }
 }
 section.main .content .markdown table {
