@@ -736,10 +736,41 @@ section.main .content .markdown blockquote p:last-child {
   }
   section.main .content .markdown p {
   font-size: 1.2em;
+  }
 }
-section.main .content .markdown img {
-  margin: 1rem 0;
-  max-width: 100%;
+section.main .content .markdown figure {
+  height: 100px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 1em;
+}
+section.main .content .markdown figure img {
+  height: 100%;
+  width: auto;
+  display: block;
+  position: static;
+  margin: auto;
+}
+@media (min-width: 376px) {
+  section.main .content .markdown figure {
+    height: 140px;
+  }
+}
+@media (min-width: 426px) {
+  section.main .content .markdown figure {
+    height: 150px;
+  }
+}
+@media (min-width: 550px) {
+  section.main .content .markdown figure {
+    height: 200px;
+  }
+}
+@media (min-width: 769px) {
+  section.main .content .markdown figure {
+    height: 269px;
+    width: 100%;
+  }
 }
 section.main .content .markdown table {
   margin-bottom: 1rem;
