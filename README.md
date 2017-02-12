@@ -44,6 +44,7 @@ complex website you can build it with the [Usage](#usage) section.
 * Logo and title in the header for a clear identity.
 * Possibility to have sections with a header and a list of articles.
 * Possibility to have single pages.
+* Twitter cards support
 
 #### Differences from the original Cocoa
 
@@ -123,6 +124,21 @@ And call images in markdown like usual :
 
 This will call the `./images/low/image.jpg` image and the `./images/high/image.jpg`.
 
+#### Twitter cards
+
+You can share your article on Twitter using the article link, and Twitter will show a summary card with the params of the post (`meta_img` is the image of the card) :
+
+```
+title = "Test title"
+description = "Test description"
+meta_img = "./images/high/test.jpg"
+```
+
+If you don't specify a meta image, it will take the global parameter `social_banner` in the `config.toml` :
+
+```
+social_banner = "img/banner.png"
+```
 
 ## Changelog
 
