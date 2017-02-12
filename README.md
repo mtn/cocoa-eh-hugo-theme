@@ -22,6 +22,7 @@ You can use this theme either for your blog or your personnal website. A demo is
 * Suited for blogging and personal webpages.
 * Possibility to have sections with a header and a list of articles.
 * Possibility to have single pages.
+* Homepage with latest and best posts
 * Syntax highlighting with hightlightjs.
 * Progressive images.
 * Twitter cards support.
