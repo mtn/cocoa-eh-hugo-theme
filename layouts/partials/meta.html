@@ -5,3 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
+
+{{ if .Site.Params.twitter }}
+    <meta property="twitter:site" content="@{{.Site.Params.twitter}}">
+{{ end }}
+<meta property="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+{{ if .Site.Params.social_banner }}
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="{{ if .Params.meta_img }}{{ .Site.BaseURL }}{{ .Params.meta_img }}{{ else }}{{ .Site.BaseURL }}{{.Site.Params.social_banner}}{{ end }}">
+{{ else }}
+    <meta property="twitter:card" content="summary">
+{{ end }}
+<meta property="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else if .IsPage }}{{ .Description }}{{ end }}">
