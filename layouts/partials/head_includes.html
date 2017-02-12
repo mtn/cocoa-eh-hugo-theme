@@ -1,11 +1,13 @@
 <!-- CSS -->
 
-{{ if .Site.Params.highlightjs }}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
-{{ end }}
-
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/reset.css">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/fonts.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/ionicons.min.css">
+
+{{ if .Site.Params.highlightjs }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.min.css">
+{{ end }}
 
 {{ if .Site.Params.progressively }}
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/progressively.min.css">

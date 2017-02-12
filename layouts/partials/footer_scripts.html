@@ -1,17 +1,21 @@
 {{ if .Site.Params.highlightjs }}
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script src="{{ .Site.BaseURL }}js/highlight.min.js" defer></script>
   {{ range .Site.Params.highlightjslanguages }}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/{{.}}.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/{{.}}.min.js" defer></script>
   {{ end }}
-
-  <script type="text/javascript">
-    hljs.initHighlightingOnLoad();
-  </script>
 {{ end }}
 
 {{ if .Site.Params.progressively }}
-  <script src="{{ .Site.BaseURL }}js/progressively.min.js"></script>
-  <script>
-    progressively.init({delay: 30, throttle: 50});
-  </script>
+  <script src="{{ .Site.BaseURL }}js/progressively.min.js" defer></script>
 {{ end }}
+
+<script>
+  window.onload = function() {
+    {{ if .Site.Params.highlightjs }}
+      hljs.initHighlighting();
+    {{ end }}
+    {{ if .Site.Params.progressively }}
+      progressively.init({delay: 30, throttle: 50});
+    {{ end }}
+  };
+</script>
