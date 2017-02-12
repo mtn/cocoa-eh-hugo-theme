@@ -495,6 +495,9 @@ section.main .content .title-container {
   -ms-justify-content: space-between;
   justify-content: space-between;
 }
+section.main .content .posts {
+  margin-bottom: 4em;
+}
 section.main .content .page-heading {
   font-size: 18px;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
@@ -637,9 +640,6 @@ section.header {
 section.header-home {
   padding-top: 36px;
 }
-section.icons {
-  padding-top: 0;
-}
 section.main {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -660,7 +660,6 @@ section.main .container .content .post-item {
     padding-bottom: 60px;
   }
   section.icons {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
   section.main {

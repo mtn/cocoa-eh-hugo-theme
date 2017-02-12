@@ -8,12 +8,16 @@
                 </div>
             {{ end }}
 
+            <div class="posts">
             {{ $nbPosts := len (where .Data.Pages "Section" "blog") }}
             {{ if gt $nbPosts 0 }}
                 <div class="page-heading">Latest posts</div>
                 <ul>
-                {{ range first .Site.Params.latestpostcount (where .Data.Pages "Section" "blog") }}
-                    {{ partial "li.html" . }}
+                {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "blog")).GroupByDate "Jan, 2006" "desc" }}
+                    <li class="groupby">{{ .Key }}</li>
+                    {{ range .Pages.ByPublishDate }}
+                        {{ partial "li.html" . }}
+                    {{ end }}
                 {{ end }}
                 </ul>
 
@@ -21,6 +25,21 @@
                     <a href="./blog/" class="see-more">See more ...</a>
                 {{ end }}
             {{ end }}
+            </div>
+
+            <div class="posts">
+            {{ $nbPosts := len (where .Data.Pages "Params.best" true) }}
+            {{ if gt $nbPosts 0 }}
+                <div class="page-heading">Best posts</div>
+                <ul>
+                {{ range .Data.Pages.ByPublishDate }}
+                    {{ if eq .Params.best true }}
+                        {{ partial "li.html" . }}
+                    {{ end }}
+                {{ end }}
+                </ul>
+            {{ end }}
+            </div>
         </div>
     </div>
 </section>

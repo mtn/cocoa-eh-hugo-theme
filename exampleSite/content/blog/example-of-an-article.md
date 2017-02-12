@@ -2,6 +2,7 @@
 author: "Alexis Tacnet"
 date: 2015-09-28
 title: Example article
+best: true
 ---
 
 ## Text

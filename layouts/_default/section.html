@@ -10,16 +10,18 @@
                     {{ end }}
                 {{ end }}
             </div>
+            <div class="posts">
             {{ if ne (len (where .Data.Pages "Title" "!=" $globalTitle)) 0}}
-            <div class="page-heading">{{ .Title }}</div>
-            <ul>
-                {{ range .Data.Pages.ByPublishDate }}
-                    {{ if ne .Title $globalTitle }}
-                        {{ partial "li.html" . }}
+                <div class="page-heading">{{ .Title }}</div>
+                <ul>
+                    {{ range .Data.Pages.ByPublishDate }}
+                        {{ if ne .Title $globalTitle }}
+                            {{ partial "li.html" . }}
+                        {{ end }}
                     {{ end }}
-                {{ end }}
-            </ul>
+                </ul>
             {{ end }}
+            </div>
         </div>
     </div>
 </section>
