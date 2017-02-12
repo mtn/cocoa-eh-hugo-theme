@@ -1,5 +1,12 @@
 # Changelog
 
+> v0.7.0
+
+- Speed up a bit the theme
+- Add twitter cards support
+- Simplify the README
+- Change the homepage to display latest and bests posts
+
 > v0.6.0
 
 - Add progressive loading of images
