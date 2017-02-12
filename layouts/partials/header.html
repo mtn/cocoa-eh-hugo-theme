@@ -11,7 +11,7 @@
 <section class="header header-home"> 
 {{ end }}
     <div class="container">
-        <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" /></a>
+        <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a>
         <div class="content">
             <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
             <nav>
@@ -43,31 +43,31 @@
 
         {{ if .Site.Params.github }}
             <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
-                <i class="icon ion-social-github"></i>
+                <i class="icon ion-social-github" title="github"></i>
             </a>
         {{ end }}
         
         {{ if .Site.Params.twitter }}
             <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
-                <i class="icon ion-social-twitter"></i>
+                <i class="icon ion-social-twitter" title="twitter"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.linkedin }}
             <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
-                <i class="icon ion-social-linkedin"></i>
+                <i class="icon ion-social-linkedin" title="linkedin"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.email }}
             <a href="mailto:{{ .Site.Params.email }}">
-                <i class="icon ion-ios-email larger"></i>
+                <i class="icon ion-ios-email larger" title="email"></i>
             </a>
         {{ end }}
 
         {{ if .Site.RSSLink }}
             <a href="{{ .Site.RSSLink }}">
-                <i class="icon ion-social-rss larger"></i>
+                <i class="icon ion-social-rss larger" title="rss"></i>
             </a>
         {{ end }}
         </div>
