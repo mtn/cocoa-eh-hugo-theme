@@ -18,6 +18,7 @@ blog = "blog/:slug/"
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Example blog"
+copyright = "Copyright © 2015 Nishanth Shanmugham"
 logofile = "img/logo.png"
 faviconfile = "img/logo.png"
 highlightjs = true
