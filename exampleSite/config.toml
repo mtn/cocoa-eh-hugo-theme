@@ -23,7 +23,6 @@ faviconfile = "img/logo.png"
 highlightjs = true
 progressively = true
 latestpostcount = 5
-lang = "en"
 github = "example"
 email = "you@example.com"
 linkedin = "john-example-aa80ue8è"
