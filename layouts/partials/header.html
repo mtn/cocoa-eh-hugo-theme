@@ -22,7 +22,7 @@
                     {{ range .Site.Sections }}
                         {{ range first 1 (where .Pages "Section" "ne" "")}}
                             {{ if ne .Section "blog"}}
-                            <a href="{{ .Section | urlize }}"><li>{{ .Section }}</li></a>
+                            <a href="{{ .Section | urlize | absURL }}"><li>{{ .Section }}</li></a>
                             {{ end }}
                         {{ end }}
                     {{ end }}
