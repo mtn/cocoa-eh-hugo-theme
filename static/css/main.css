@@ -692,6 +692,14 @@ a:hover {
 img {
   max-width: 100%;
 }
+section.main .content .markdown {
+  font-size: 1em;
+  line-height: 1.75em;
+  color: #313537;
+  letter-spacing: 0.01rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+}
 section.main .content .markdown h1,
 section.main .content .markdown h2,
 section.main .content .markdown h3,
@@ -699,6 +707,7 @@ section.main .content .markdown h4,
 section.main .content .markdown h5,
 section.main .content .markdown h6 {
   font-size: 22px;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
@@ -762,13 +771,7 @@ section.main .content .markdown a code:hover {
   text-decoration: underline;
 }
 section.main .content .markdown p {
-  font-size: 1em;
   text-align: justify;
-  line-height: 1.75em;
-  color: #313537;
-  letter-spacing: 0.01rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 100;
   margin-top: 0;
   margin-bottom: 1em;
 }
@@ -789,7 +792,8 @@ section.main .content .markdown ul {
 }
 section.main .content .markdown li {
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 2em;
 }
 section.main .content .markdown em {
   font-style: italic;
@@ -824,12 +828,12 @@ section.main .content .markdown blockquote p:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 550px) {
+  section.main .content .markdown {
+    font-size: 1.2em;
+  }
   section.main .content .markdown blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
-  }
-  section.main .content .markdown p {
-  font-size: 1.2em;
   }
 }
 section.main .content .markdown figure {
