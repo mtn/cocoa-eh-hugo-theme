@@ -1,5 +1,5 @@
 +++
-title: "License"
+title= "License"
 +++
 
 You can use this page to put a license on the contents of your blog, like so:
