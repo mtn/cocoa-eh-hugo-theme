@@ -27,7 +27,7 @@
             {{ end }}
             </div>
 
-            <div class="posts">
+            <div class="best-posts">
             {{ $nbPosts := len (where .Data.Pages "Params.best" true) }}
             {{ if gt $nbPosts 0 }}
                 <div class="page-heading">Best posts</div>
