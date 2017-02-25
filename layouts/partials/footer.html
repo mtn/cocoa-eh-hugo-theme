@@ -1,3 +1,48 @@
+<section class="footer">
+    <div class="container">
+        <div class="copyright">
+
+        {{ if .Site.Params.copyright }}
+            <a href="{{ .Site.BaseURL }}license">{{ .Site.Params.copyright}}</a>
+        {{ end }}
+
+        </div>
+        <div class="icons">
+
+        {{ if .Site.Params.github }}
+            <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
+                <i class="icon ion-social-github" title="github"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.twitter }}
+            <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
+                <i class="icon ion-social-twitter" title="twitter"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.linkedin }}
+            <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
+                <i class="icon ion-social-linkedin" title="linkedin"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.email }}
+            <a href="mailto:{{ .Site.Params.email }}">
+                <i class="icon ion-ios-email larger" title="email"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.RSSLink }}
+            <a href="{{ .Site.RSSLink }}">
+                <i class="icon ion-social-rss larger" title="rss"></i>
+            </a>
+        {{ end }}
+
+        </div>
+    </div>
+</section>
+
 {{ partial "footer_scripts" . }}
 
 </body>

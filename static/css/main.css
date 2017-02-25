@@ -246,44 +246,6 @@ section {
     max-width: 750px;
   }
 }
-section.header {
-  -webkit-order: 0;
-  -moz-order: 0;
-  -ms-order: 0;
-  order: 0;
-}
-section.icons {
-  -webkit-order: 1;
-  -moz-order: 1;
-  -ms-order: 1;
-  order: 1;
-}
-section.main {
-  -webkit-order: 2;
-  -moz-order: 2;
-  -ms-order: 2;
-  order: 2;
-}
-@media (min-width: 600px) {
-  section.header {
-    -webkit-order: 0;
-    -moz-order: 0;
-    -ms-order: 0;
-    order: 0;
-  }
-  section.icons {
-    -webkit-order: 2;
-    -moz-order: 2;
-    -ms-order: 2;
-    order: 2;
-  }
-  section.main {
-    -webkit-order: 1;
-    -moz-order: 1;
-    -ms-order: 1;
-    order: 1;
-  }
-}
 section.header .container {
   -webkit-align-items: center;
   -moz-align-items: center;
@@ -408,7 +370,10 @@ section.header nav ul li:hover {
     color: #333333;
   }
 }
-section.icons .container {
+section.footer {
+  margin-top: -2em;
+}
+section.footer .container {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -417,12 +382,11 @@ section.icons .container {
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-}
-section.icons .content {
-  width: auto;
+  flex-direction: column-reverse;
+  width: 100%;
   text-align: center;
 }
-section.icons .content a {
+section.footer .container a {
   font-size: 14px;
   margin-left: 6px;
   margin-right: 6px;
@@ -432,43 +396,49 @@ section.icons .content a {
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
-section.icons .content a:first-child {
+section.footer .container a:first-child {
   margin-left: 0;
 }
-section.icons .content a:last-child {
+section.footer .container a:last-child {
   margin-right: 0;
 }
-section.icons .content a:hover {
+section.footer .container a:hover {
   color: #111111;
 }
-section.icons .content a .icon {
+section.footer .container a .icon {
   font-size: 20px;
 }
-section.icons .content a .icon.larger {
+section.footer .container a .icon.larger {
   font-size: 22px;
 }
+section.footer .container .copyright {
+  flex-grow: 0.5;
+  text-align: start;
+}
+section.footer .container .icons {
+  flex-grow: 0.5;
+  text-align: end;
+}
 @media (min-width: 600px) {
-  section.icons {
+  section.footer {
+    margin-top: -1em;
     background-color: transparent;
   }
-  section.icons .container {
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
+  section.footer .container {
+    flex-direction: row;
   }
-  section.icons .content a {
+  section.footer .container a {
     margin-left: 3px;
     margin-right: 3px;
     color: #666666;
   }
-  section.icons .content a:hover {
+  section.footer .container a:hover {
     color: #333333;
   }
-  section.icons .content a .icon {
+  section.footer .container a .icon {
     font-size: 18px;
   }
-  section.icons .content a .icon.larger {
+  section.footer .container a .icon.larger {
     font-size: 20px;
   }
 }
@@ -644,7 +614,6 @@ section.header-home {
 }
 section.main {
   padding-top: 32px;
-  padding-bottom: 32px;
 }
 section.main .container .content .post-item .meta {
     display: block;
@@ -661,12 +630,11 @@ section.main .container .content .post-item {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  section.icons {
+  section.footer {
     padding-bottom: 60px;
   }
   section.main {
     padding-top: 0;
-    padding-bottom: 0;
   }
   section.main .container .content .post-item {
     display: flex;
