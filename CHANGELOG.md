@@ -1,5 +1,11 @@
 # Changelog
 
+> v0.8.0
+
+- Add a licensing page and a copyright in the footer if wanted (thx to [Hjdskes](https://github.com/Hjdskes))
+- Fix footnotes
+- Other small fixes
+
 > v0.7.0
 
 - Speed up a bit the theme

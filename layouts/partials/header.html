@@ -3,12 +3,12 @@
 
 {{ partial "head.html" . }}
 
-<body lang="{{ .Site.Params.lang }}">
+<body>
 
 {{ if .IsPage }}
-<section class="header"> 
+<section class="header">
 {{ else }}
-<section class="header header-home"> 
+<section class="header header-home">
 {{ end }}
     <div class="container">
         <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a>
@@ -22,54 +22,17 @@
                     {{ range .Site.Sections }}
                         {{ range first 1 (where .Pages "Section" "ne" "")}}
                             {{ if ne .Section "blog"}}
-                            <a href="{{ .Section | urlize }}"><li>{{ .Section }}</li></a>
+                            <a href="{{ .Section | urlize | absURL }}"><li>{{ .Section }}</li></a>
                             {{ end }}
                         {{ end }}
                     {{ end }}
                     {{ range where .Site.RegularPages "Section" ""}}
-                        {{ if ne .Title "Home"}}
+                        {{ if and (ne .Title "License") (ne .Title "Home")}}
                             <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
                         {{ end }}
                     {{ end }}
                 </ul>
             </nav>
-        </div>
-    </div>
-</section>
-
-<section class="icons">
-    <div class="container">
-        <div class="content">
-
-        {{ if .Site.Params.github }}
-            <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
-                <i class="icon ion-social-github" title="github"></i>
-            </a>
-        {{ end }}
-        
-        {{ if .Site.Params.twitter }}
-            <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
-                <i class="icon ion-social-twitter" title="twitter"></i>
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.linkedin }}
-            <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
-                <i class="icon ion-social-linkedin" title="linkedin"></i>
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.email }}
-            <a href="mailto:{{ .Site.Params.email }}">
-                <i class="icon ion-ios-email larger" title="email"></i>
-            </a>
-        {{ end }}
-
-        {{ if .Site.RSSLink }}
-            <a href="{{ .Site.RSSLink }}">
-                <i class="icon ion-social-rss larger" title="rss"></i>
-            </a>
-        {{ end }}
         </div>
     </div>
 </section>
