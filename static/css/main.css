@@ -653,7 +653,7 @@ section.main .container .content .post-item {
 }
 @media (min-width: 600px) {
   .container {
-    margin: 0 30px;
+    padding: 0 30px;
   }
   section.header {
     padding-top: 60px;
@@ -691,6 +691,9 @@ a:hover {
 }
 img {
   max-width: 100%;
+}
+section.main .content {
+    width: 100%;
 }
 section.main .content .markdown {
   font-size: 1em;
@@ -755,7 +758,6 @@ section.main .content .markdown pre {
   padding: 1rem;
   line-height: 1.5em;
   white-space: pre;
-  white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
 }
