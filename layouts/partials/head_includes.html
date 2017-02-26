@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/progressively.min.css">
 {{ end }}
 
-{{range .Site.Params.extracssfiles}}
-    <link rel="stylesheet" href="{{.}}">
-{{end}}
+{{ range .Site.Params.extracssfiles }}
+  <link rel="stylesheet" href="{{ . | absURL }}">
+{{ end }}
 
 <!-- Icon -->
 <link rel="shortcut icon"
