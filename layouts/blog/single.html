@@ -19,7 +19,7 @@
                     {{ .Content }}
                 {{ end }}
                 <br>
-                <p><a href="{{ .Section }}">Back to posts</a></p>
+                <p><a href="{{ .Section | absURL }}">Back to posts</a></p>
             </div>
             <br>
             <div class="disqus">
