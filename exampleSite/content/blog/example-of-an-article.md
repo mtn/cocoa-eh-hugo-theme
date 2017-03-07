@@ -13,7 +13,7 @@ best: true
 
 **This theme includes a tranparent way to defer images. This can be enabled/disabled in the `config.toml`.**
 
-![image](../../img/startup.jpg)
+![image](/img/startup.jpg)
 
 **You will just have to do two images : the normal, and a low resolution one.**
 
