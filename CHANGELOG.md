@@ -1,5 +1,11 @@
 # Changelog
 
+> v0.9.0
+
+- **Change the folder of high res images, now it's the root of the image folder.**
+- Add a version to CSS to prevent bad caching
+- Fix the images so absoluts paths are working even if the blog is in a subfolder
+
 > v0.8.0
 
 - Add a licensing page and a copyright in the footer if wanted (thx to [Hjdskes](https://github.com/Hjdskes))

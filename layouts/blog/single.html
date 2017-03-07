@@ -13,11 +13,7 @@
                 </div>
             </div>
             <div class="markdown">
-                {{ if .Site.Params.progressively }}
-                    {{ .Content | replaceRE "<img src=(.*)\\/(.*) alt=(.*)>" "<figure class=\"progressive\"><img class=\"progressive__img progressive--not-loaded\" data-progressive=$1/high/$2 src=$1/low/$2 alt=$3></figure>" | safeHTML }}
-                {{ else }}
-                    {{ .Content }}
-                {{ end }}
+                {{ partial "content" . }}
                 <br>
                 <p><a href="{{ .Section | absURL }}">Back to posts</a></p>
             </div>
