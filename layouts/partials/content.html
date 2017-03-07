@@ -1,0 +1,6 @@
+{{ if .Site.Params.progressively }}
+    {{ $newImage := (print "<figure class=\"progressive\"><img class=\"progressive__img progressive--not-loaded\" data-progressive=\"" .Site.BaseURL "$1/$2\" src=\"" .Site.BaseURL "$1/low/$2\" alt=$3></figure>") }}
+    {{ .Content | replaceRE "<img src=\"/(.*)\\/(.*)\" alt=(.*)>" $newImage | safeHTML }}
+{{ else }}
+    {{ .Content }}
+{{ end }}
