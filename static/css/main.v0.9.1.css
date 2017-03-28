@@ -728,6 +728,12 @@ section.main .content .markdown pre {
   word-break: break-all;
   word-wrap: break-word;
 }
+@media (min-width: 769px) {
+  section.main .content .markdown pre {
+    width: 110%;
+    margin-left: -4%;
+  }
+}
 section.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
   padding: 0;
