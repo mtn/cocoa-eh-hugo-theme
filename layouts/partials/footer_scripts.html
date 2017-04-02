@@ -9,6 +9,10 @@
   <script src="{{ .Site.BaseURL }}js/progressively.min.js" defer></script>
 {{ end }}
 
+{{ if isset .Site.Params "googleanalytics" }}
+    {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
 <script>
   window.onload = function() {
     {{ if .Site.Params.highlightjs }}
