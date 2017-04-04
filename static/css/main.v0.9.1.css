@@ -492,6 +492,7 @@ section.main .content .front-matter .meta {
   margin-bottom: 32px;
 }
 section.main .content .front-matter .date,
+section.main .content .front-matter .author,
 section.main .content .front-matter .word-count,
 section.main .content .front-matter .reading-time .middot {
   display: none;
@@ -507,6 +508,7 @@ section.main .content .front-matter .middot:before {
 }
 @media (min-width: 600px) {
   section.main .content .front-matter .date,
+  section.main .content .front-matter .author,
   section.main .content .front-matter .word-count,
   section.main .content .front-matter .reading-time .middot {
     display: initial;
