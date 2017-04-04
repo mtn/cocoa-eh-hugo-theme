@@ -7,15 +7,13 @@
                 <div class="title-container">
                     {{ partial "page-heading" . }}
                 </div>
-                {{ if not .Params.noauthor }}
-                    {{ if .Params.author }}
-                        <div class="author-container">
-                            <div class="author" title="{{ .Params.Author }}">{{ .Params.author }}</div>
-                        </div>
-                    {{end}}
-                {{end}}
                 <div class="meta">
                     <div class="date" title="{{ .Date.Format .Site.Params.dateformfull }}">{{ .Date.Format .Site.Params.dateform }}</div>
+                    {{ if not .Params.noauthor }}
+                        {{ if .Params.author }}
+                        <div class="author" title="{{ .Params.Author }}"><div class="middot"></div>{{ .Params.author }}</div>
+                        {{end}}
+                    {{end}}
                     <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
                 </div>
             </div>
