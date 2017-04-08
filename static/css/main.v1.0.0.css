@@ -1,116 +1,4 @@
 @font-face {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-style: normal;
-  src: url('../fonts/Open-Sans-regular/Open-Sans-regular.eot');
-  src: url('../fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
-       local('Open Sans'),
-       local('Open-Sans-regular'),
-       url('../fonts/Open-Sans-regular/Open-Sans-regular.woff2') format('woff2'),
-       url('../fonts/Open-Sans-regular/Open-Sans-regular.woff') format('woff'),
-       url('../fonts/Open-Sans-regular/Open-Sans-regular.ttf') format('truetype'),
-       url('../fonts/Open-Sans-regular/Open-Sans-regular.svg#OpenSans') format('svg');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: 700;
-  font-style: normal;
-  src: url('../fonts/Open-Sans-700/Open-Sans-700.eot');
-  src: url('../fonts/Open-Sans-700/Open-Sans-700.eot?#iefix') format('embedded-opentype'),
-       local('Open Sans Bold'),
-       local('Open-Sans-700'),
-       url('../fonts/Open-Sans-700/Open-Sans-700.woff2') format('woff2'),
-       url('../fonts/Open-Sans-700/Open-Sans-700.woff') format('woff'),
-       url('../fonts/Open-Sans-700/Open-Sans-700.ttf') format('truetype'),
-       url('../fonts/Open-Sans-700/Open-Sans-700.svg#OpenSans') format('svg');
-}
-
-@font-face {
-  font-family: 'Ubuntu Mono';
-  font-weight: 400;
-  font-style: normal;
-  src: url('../fonts/Ubuntu-Mono-regular/Ubuntu-Mono-regular.eot');
-  src: url('../fonts/Ubuntu-Mono-regular/Ubuntu-Mono-regular.eot?#iefix') format('embedded-opentype'),
-       local('Ubuntu Mono'),
-       local('Ubuntu-Mono-regular'),
-       url('../fonts/Ubuntu-Mono-regular/Ubuntu-Mono-regular.woff2') format('woff2'),
-       url('../fonts/Ubuntu-Mono-regular/Ubuntu-Mono-regular.woff') format('woff'),
-       url('../fonts/Ubuntu-Mono-regular/Ubuntu-Mono-regular.ttf') format('truetype'),
-       url('../fonts/Ubuntu-Mono-regular/Ubuntu-Mono-regular.svg#UbuntuMono') format('svg');
-}
-
-@font-face {
-  font-family: 'Ubuntu Mono';
-  font-weight: 700;
-  font-style: normal;
-  src: url('../fonts/Ubuntu-Mono-700/Ubuntu-Mono-700.eot');
-  src: url('../fonts/Ubuntu-Mono-700/Ubuntu-Mono-700.eot?#iefix') format('embedded-opentype'),
-       local('Ubuntu Mono Bold'),
-       local('Ubuntu-Mono-700'),
-       url('../fonts/Ubuntu-Mono-700/Ubuntu-Mono-700.woff2') format('woff2'),
-       url('../fonts/Ubuntu-Mono-700/Ubuntu-Mono-700.woff') format('woff'),
-       url('../fonts/Ubuntu-Mono-700/Ubuntu-Mono-700.ttf') format('truetype'),
-       url('../fonts/Ubuntu-Mono-700/Ubuntu-Mono-700.svg#UbuntuMono') format('svg');
-}
-
-@font-face {
-  font-family: 'Ubuntu Mono';
-  font-weight: 400;
-  font-style: italic;
-  src: url('../fonts/Ubuntu-Mono-italic/Ubuntu-Mono-italic.eot');
-  src: url('../fonts/Ubuntu-Mono-italic/Ubuntu-Mono-italic.eot?#iefix') format('embedded-opentype'),
-       local('Ubuntu Mono Italic'),
-       local('Ubuntu-Mono-italic'),
-       url('../fonts/Ubuntu-Mono-italic/Ubuntu-Mono-italic.woff2') format('woff2'),
-       url('../fonts/Ubuntu-Mono-italic/Ubuntu-Mono-italic.woff') format('woff'),
-       url('../fonts/Ubuntu-Mono-italic/Ubuntu-Mono-italic.ttf') format('truetype'),
-       url('../fonts/Ubuntu-Mono-italic/Ubuntu-Mono-italic.svg#UbuntuMono') format('svg');
-}
-
-@font-face {
-  font-family: 'Ubuntu Mono';
-  font-weight: 700;
-  font-style: italic;
-  src: url('../fonts/Ubuntu-Mono-700italic/Ubuntu-Mono-700italic.eot');
-  src: url('../fonts/Ubuntu-Mono-700italic/Ubuntu-Mono-700italic.eot?#iefix') format('embedded-opentype'),
-       local('Ubuntu Mono Bold Italic'),
-       local('Ubuntu-Mono-700italic'),
-       url('../fonts/Ubuntu-Mono-700italic/Ubuntu-Mono-700italic.woff2') format('woff2'),
-       url('../fonts/Ubuntu-Mono-700italic/Ubuntu-Mono-700italic.woff') format('woff'),
-       url('../fonts/Ubuntu-Mono-700italic/Ubuntu-Mono-700italic.ttf') format('truetype'),
-       url('../fonts/Ubuntu-Mono-700italic/Ubuntu-Mono-700italic.svg#UbuntuMono') format('svg');
-}
-
-@font-face {
-  font-family: 'Raleway';
-  font-weight: 500;
-  font-style: normal;
-  src: url('../fonts/Raleway-500/Raleway-500.eot');
-  src: url('../fonts/Raleway-500/Raleway-500.eot?#iefix') format('embedded-opentype'),
-       local('Raleway Medium'),
-       local('Raleway-500'),
-       url('../fonts/Raleway-500/Raleway-500.woff2') format('woff2'),
-       url('../fonts/Raleway-500/Raleway-500.woff') format('woff'),
-       url('../fonts/Raleway-500/Raleway-500.ttf') format('truetype'),
-       url('../fonts/Raleway-500/Raleway-500.svg#Raleway') format('svg');
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-weight: 400;
-  font-style: normal;
-  src: url('../fonts/Source-Sans-Pro-regular/Source-Sans-Pro-regular.eot');
-  src: url('../fonts/Source-Sans-Pro-regular/Source-Sans-Pro-regular.eot?#iefix') format('embedded-opentype'),
-       local('Source Sans Pro'),
-       local('Source-Sans-Pro-regular'),
-       url('../fonts/Source-Sans-Pro-regular/Source-Sans-Pro-regular.woff2') format('woff2'),
-       url('../fonts/Source-Sans-Pro-regular/Source-Sans-Pro-regular.woff') format('woff'),
-       url('../fonts/Source-Sans-Pro-regular/Source-Sans-Pro-regular.ttf') format('truetype'),
-       url('../fonts/Source-Sans-Pro-regular/Source-Sans-Pro-regular.svg#SourceSansPro') format('svg');
-}
-
-@font-face {
   font-family: 'Nexa Bold';
   src: url('../fonts/Nexa Bold.otf');
 }
@@ -194,8 +82,8 @@ body {
   justify-content: flex-start;
   width: 100%;
   min-height: 100%;
-  font-weight: 400;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 500;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   color: #111111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -289,8 +177,6 @@ section.header .name {
 }
 section.header nav {
   margin-bottom: 16px;
-  text-transform: uppercase;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
 }
 section.header nav ul {
   list-style: none;
@@ -315,6 +201,8 @@ section.header nav ul li {
   color: #555555;
   font-weight: 500;
   font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -387,11 +275,11 @@ section.footer .container a {
   font-size: 14px;
   margin-left: 6px;
   margin-right: 6px;
-  color: #555555;
-  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  opacity: 0.6;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 section.footer .container a:first-child {
   margin-left: 0;
@@ -400,13 +288,11 @@ section.footer .container a:last-child {
   margin-right: 0;
 }
 section.footer .container a:hover {
-  color: #111111;
+  opacity: 0.8;
 }
 section.footer .container a .icon {
-  font-size: 20px;
-}
-section.footer .container a .icon.larger {
-  font-size: 22px;
+  width: 16px;
+  height: 16px;
 }
 section.footer .container .copyright {
   flex-grow: 0.5;
@@ -467,7 +353,7 @@ section.main .content .posts {
   margin-bottom: 4em;
 }
 section.main .content .page-heading {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
@@ -492,6 +378,8 @@ section.main .content .front-matter .meta {
   margin-bottom: 32px;
 }
 section.main .content .front-matter .date,
+section.main .content .front-matter .author,
+section.main .content .front-matter .tags,
 section.main .content .front-matter .word-count,
 section.main .content .front-matter .reading-time .middot {
   display: none;
@@ -505,14 +393,40 @@ section.main .content .front-matter .middot {
 section.main .content .front-matter .middot:before {
   content: "•";
 }
+section.main .content .front-matter .tags ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+section.main .content .front-matter .tags ul li {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+section.main .content .front-matter .tags ul li:hover {
+  opacity: 0.7;
+}
+section.main .content .front-matter .tags ul li a {
+  color: #666666;
+}
 @media (min-width: 600px) {
   section.main .content .front-matter .date,
+  section.main .content .front-matter .author,
+  section.main .content .front-matter .tags,
   section.main .content .front-matter .word-count,
   section.main .content .front-matter .reading-time .middot {
     display: initial;
-  }
-  section.main .content .title-container .initials {
-    display: none;
   }
 }
 section.main .container.f04 {
@@ -663,12 +577,11 @@ section.main .content {
     width: 100%;
 }
 section.main .content .markdown {
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.75em;
   color: #313537;
-  letter-spacing: 0.01rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 100;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 300;
 }
 section.main .content .markdown h1,
 section.main .content .markdown h2,
@@ -677,7 +590,7 @@ section.main .content .markdown h4,
 section.main .content .markdown h5,
 section.main .content .markdown h6 {
   font-size: 22px;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
@@ -727,6 +640,12 @@ section.main .content .markdown pre {
   white-space: pre;
   word-break: break-all;
   word-wrap: break-word;
+}
+@media (min-width: 769px) {
+  section.main .content .markdown pre {
+    width: 110%;
+    margin-left: -4%;
+  }
 }
 section.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
@@ -801,9 +720,6 @@ section.main .content .markdown blockquote p:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 550px) {
-  section.main .content .markdown {
-    font-size: 1.2em;
-  }
   section.main .content .markdown blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
@@ -857,4 +773,57 @@ section.main .content .markdown .footnotes li {
 }
 section.main .content .markdown .footnote-ref {
   font-size: 0.7em;
+}
+section.main .content .navigation {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+section.main .content .navigation div {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin-top: 1em;
+}
+section.main .content .navigation .icon {
+  width: 16px;
+  height: 16px;
+}
+section.main .content .navigation a {
+  width: 250px;
+  margin-left: 1em;
+  text-align: center;
+  font-style: italic;
+  color: #313537;
+}
+@media (min-width: 570px) {
+  section.main .content .navigation {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  section.main .content .navigation div {
+    margin-top: 0em;
+  }
 }

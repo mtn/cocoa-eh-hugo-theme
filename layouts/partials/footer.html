@@ -11,31 +11,31 @@
 
         {{ if .Site.Params.github }}
             <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
-                <i class="icon ion-social-github" title="github"></i>
+                <img class="icon" src="/img/github.svg" alt="github" />
             </a>
         {{ end }}
 
         {{ if .Site.Params.twitter }}
             <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
-                <i class="icon ion-social-twitter" title="twitter"></i>
+                <img class="icon" src="/img/twitter.svg" alt="twitter" />
             </a>
         {{ end }}
 
         {{ if .Site.Params.linkedin }}
             <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
-                <i class="icon ion-social-linkedin" title="linkedin"></i>
+                <img class="icon" src="/img/linkedin.svg" alt="linkedin" />
             </a>
         {{ end }}
 
         {{ if .Site.Params.email }}
             <a href="mailto:{{ .Site.Params.email }}">
-                <i class="icon ion-ios-email larger" title="email"></i>
+                <img class="icon" src="/img/email.svg" alt="email" />
             </a>
         {{ end }}
 
         {{ if .Site.RSSLink }}
             <a href="{{ .Site.RSSLink }}">
-                <i class="icon ion-social-rss larger" title="rss"></i>
+                <img class="icon" src="/img/rss.svg" alt="rss" />
             </a>
         {{ end }}
 

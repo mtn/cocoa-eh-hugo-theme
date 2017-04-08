@@ -9,6 +9,10 @@
   <script src="{{ .Site.BaseURL }}js/progressively.min.js" defer></script>
 {{ end }}
 
+{{ if isset .Site.Params "googleanalytics" }}
+    {{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
+
 <script>
   window.onload = function() {
     {{ if .Site.Params.highlightjs }}
@@ -19,3 +23,7 @@
     {{ end }}
   };
 </script>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">

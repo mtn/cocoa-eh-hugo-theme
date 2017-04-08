@@ -1,5 +1,14 @@
 # Changelog
 
+> v1.0.0
+
+- Change the set of fonts to **Nexa Bold, Raleway and Merriweather**.
+- Add an optional navigation at the bottom of posts.
+- Add the tags in the metadatas and add a template for tags pages.
+- Add Google Analytics (thx @mtn)
+- Add author informations on posts (thx @seemethere)
+- Replace ionicons with svgs
+
 > v0.9.0
 
 - **Change the folder of high res images, now it's the root of the image folder.**

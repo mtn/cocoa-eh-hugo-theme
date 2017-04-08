@@ -9,14 +9,43 @@
                 </div>
                 <div class="meta">
                     <div class="date" title="{{ .Date.Format .Site.Params.dateformfull }}">{{ .Date.Format .Site.Params.dateform }}</div>
+                    {{ if not .Params.noauthor }}
+                        {{ if .Params.author }}
+                        <div class="author" title="{{ .Params.Author }}"><div class="middot"></div>{{ .Params.author }}</div>
+                        {{end}}
+                    {{end}}
                     <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
+                    <div class="tags">
+                        <ul>
+                          {{ range .Params.tags }}
+                            <div class="middot"></div>
+                            <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+                          {{ end }}
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="markdown">
                 {{ partial "content" . }}
                 <br>
-                <p><a href="{{ .Section | absURL }}">Back to posts</a></p>
             </div>
+            {{ if .Site.Params.posts_navigation }}
+                <div class="navigation">
+                    {{ if .PrevInSection }}
+                    <div>
+                        <img class="icon" src="/img/back.svg" alt="back" />
+                        <a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a>
+                    </div>
+                    {{ end }}
+                    <div style="width: 100%;"></div>
+                    {{ if .NextInSection }}
+                    <div>
+                        <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a>
+                        <img class="icon" src="/img/next.svg" alt="next" />
+                    </div>
+                    {{ end }}
+                </div>
+            {{ end }}
             <br>
             <div class="disqus">
                 {{ template "_internal/disqus.html" . }}
