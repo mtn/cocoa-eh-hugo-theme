@@ -353,7 +353,7 @@ section.main .content .posts {
   margin-bottom: 4em;
 }
 section.main .content .page-heading {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
@@ -554,7 +554,6 @@ section.main .content .markdown {
   font-size: 1.1em;
   line-height: 1.75em;
   color: #313537;
-  letter-spacing: 0.01rem;
   font-family: 'Merriweather', sans-serif;
   font-weight: 300;
 }
