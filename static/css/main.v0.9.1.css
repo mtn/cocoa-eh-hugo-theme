@@ -275,11 +275,11 @@ section.footer .container a {
   font-size: 14px;
   margin-left: 6px;
   margin-right: 6px;
-  color: #555555;
-  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  opacity: 0.6;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 section.footer .container a:first-child {
   margin-left: 0;
@@ -288,13 +288,11 @@ section.footer .container a:last-child {
   margin-right: 0;
 }
 section.footer .container a:hover {
-  color: #111111;
+  opacity: 0.8;
 }
 section.footer .container a .icon {
-  font-size: 20px;
-}
-section.footer .container a .icon.larger {
-  font-size: 22px;
+  width: 16px;
+  height: 16px;
 }
 section.footer .container .copyright {
   flex-grow: 0.5;
