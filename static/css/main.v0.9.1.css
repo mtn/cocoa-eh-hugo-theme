@@ -379,6 +379,7 @@ section.main .content .front-matter .meta {
 }
 section.main .content .front-matter .date,
 section.main .content .front-matter .author,
+section.main .content .front-matter .tags,
 section.main .content .front-matter .word-count,
 section.main .content .front-matter .reading-time .middot {
   display: none;
@@ -392,15 +393,40 @@ section.main .content .front-matter .middot {
 section.main .content .front-matter .middot:before {
   content: "•";
 }
+section.main .content .front-matter .tags ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+section.main .content .front-matter .tags ul li {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+section.main .content .front-matter .tags ul li:hover {
+  opacity: 0.7;
+}
+section.main .content .front-matter .tags ul li a {
+  color: #666666;
+}
 @media (min-width: 600px) {
   section.main .content .front-matter .date,
   section.main .content .front-matter .author,
+  section.main .content .front-matter .tags,
   section.main .content .front-matter .word-count,
   section.main .content .front-matter .reading-time .middot {
     display: initial;
-  }
-  section.main .content .title-container .initials {
-    display: none;
   }
 }
 section.main .container.f04 {

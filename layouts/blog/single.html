@@ -15,6 +15,14 @@
                         {{end}}
                     {{end}}
                     <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
+                    <div class="tags">
+                        <ul>
+                          {{ range .Params.tags }}
+                            <div class="middot"></div>
+                            <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+                          {{ end }}
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="markdown">
