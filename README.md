@@ -2,9 +2,9 @@
 
 [![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000?style=plastic)](https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE)
 
-**Cocoa Enhanced** is a clean and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with cool typograhy. The main goal of this theme is to be simple but highly customizable.
+**Cocoa Enhanced** is a clean and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with cool typography. The main goal of this theme is to be simple but highly customizable.
 
-You can use this theme either for your blog or your personnal website. A demo is available [here](https://kodewolf.com).
+You can use this theme either for your blog or your personal website. A demo is available [here](https://kodewolf.com).
 
 > This is a fork from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements.
 
@@ -34,7 +34,7 @@ You can use this theme either for your blog or your personnal website. A demo is
 This theme is less minimalist than the original Cocoa, with some new features :
 
 * Displays a logo on the side of the header, and there is a title different from the author name.
-* Very modulable with sections and single pages.
+* Very modular with sections and single pages.
 * Group articles by month and year.
 * Progressive images.
 * Fonts are different : stronger and sharper, with a clear identity.
