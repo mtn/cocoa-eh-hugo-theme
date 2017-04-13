@@ -14,7 +14,7 @@
                         <div class="author" title="{{ .Params.Author }}"><div class="middot"></div>{{ .Params.author }}</div>
                         {{end}}
                     {{end}}
-                    <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
+                    <div class="reading-time"><div class="middot"></div>{{ .ReadingTime }} minute read</div>
                     <div class="tags">
                         <ul>
                           {{ range .Params.tags }}
