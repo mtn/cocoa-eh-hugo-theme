@@ -10,11 +10,11 @@
 
             {{ if isset .Site.Params "latestpostcount" }}
                 <div class="posts">
-                {{ $nbPosts := len (where .Data.Pages "Section" "blog") }}
+                {{ $nbPosts := len (where .Data.Pages "Type" "blog") }}
                 {{ if gt $nbPosts 0 }}
-                    <div class="page-heading">Latest posts</div>
+                    <div class="page-heading">Latest Posts</div>
                     <ul>
-                    {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "blog")).GroupByDate "Jan, 2006" "desc" }}
+                    {{ range (first .Site.Params.latestpostcount (where .Pages "Type" "blog")).GroupByDate "Jan, 2006" "desc" }}
                         <li class="groupby">{{ .Key }}</li>
                         {{ range .Pages.ByPublishDate }}
                             {{ partial "li.html" . }}
@@ -46,4 +46,3 @@
     </div>
 </section>
 {{ partial "footer.html" . }}
-
