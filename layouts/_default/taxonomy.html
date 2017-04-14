@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="posts">
+                <div class="page-heading">Posts about {{ .Title }}</div>
+                <ul>
+                    {{ range .Data.Pages.ByPublishDate }}
+                        {{ partial "li.html" . }}
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}
