@@ -14,6 +14,12 @@
   <link rel="stylesheet" href="{{ . | absURL }}">
 {{ end }}
 
+<!-- CUSTOM STYLES-->
+{{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+{{ end }}
+<!--CUSTOM STYLES END-->
+
 <!-- Icon -->
 <link rel="shortcut icon"
 {{ if .Site.Params.faviconfile }}
