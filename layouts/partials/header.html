@@ -27,7 +27,7 @@
                         {{ end }}
                     {{ end }}
                     {{ range where .Site.RegularPages "Section" ""}}
-                        {{ if and (ne .Title "License") (ne .Title "Home")}}
+                        {{ if (ne .Title "License") | and (ne .Title "Home") | and (not (in .Site.Params.customPages .Title))}}
                             <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
                         {{ end }}
                     {{ end }}
