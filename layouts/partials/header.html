@@ -5,34 +5,28 @@
 
 <body>
 
-{{ if .IsPage }}
-<section class="header">
-{{ else }}
-<section class="header header-home">
-{{ end }}
-    <div class="container">
-        <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a>
-        <div class="content">
-            <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
-            <nav>
-                <ul>
-                    {{ if ne (len (where .Site.RegularPages "Section" "blog")) 0 }}
-                        <a href="{{ .Site.BaseURL }}blog/"><li>Blog</li></a>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a></li>
+            {{ if ne (len (where .Site.RegularPages "Section" "blog")) 0 }}
+                <a href="{{ .Site.BaseURL }}blog/"><li>Blog</li></a>
+            {{ end }}
+            {{ range .Site.Sections }}
+                {{ range first 1 (where .Pages "Section" "ne" "")}}
+                    {{ if ne .Section "blog"}}
+                    <li><a href="{{ .Section | urlize | absURL }}">{{ .Section }}</li></a>
                     {{ end }}
-                    {{ range .Site.Sections }}
-                        {{ range first 1 (where .Pages "Section" "ne" "")}}
-                            {{ if ne .Section "blog"}}
-                            <a href="{{ .Section | urlize | absURL }}"><li>{{ .Section }}</li></a>
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-                    {{ range where .Site.RegularPages "Section" ""}}
-                        {{ if (ne .Title "License") | and (ne .Title "Home") | and (not (in .Site.Params.customPages .Title))}}
-                            <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
-                        {{ end }}
-                    {{ end }}
-                </ul>
-            </nav>
-        </div>
+                {{ end }}
+            {{ end }}
+            {{ range where .Site.RegularPages "Section" ""}}
+                {{ if (ne .Title "License") | and (ne .Title "Home") | and (not (in .Site.Params.customPages .Title))}}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</li></a>
+                {{ end }}
+            {{ end }}
+        </ul>
+      </div>
     </div>
-</section>
+  </nav>
+  </div>
