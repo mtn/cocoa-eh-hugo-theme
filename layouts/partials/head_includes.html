@@ -1,13 +1,23 @@
 <!-- CSS -->
 
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.v1.0.0.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.v1.0.0.css" media="screen">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/min600px.v1.0.0.css" media="(min-width: 600px)">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/min769px.v1.0.0.css" media="(min-width: 769px)">
 
 {{ if .Site.Params.highlightjs }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.min.css">
+  <style type="text/css" media="screen">
+    {{ partial "highlight.min.css" . | safeCSS }}
+  </style>
 {{ end }}
 
 {{ if .Site.Params.progressively }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/progressively.min.css">
+  <style type="text/css" media="screen">
+    {{ partial "progressively.min.css" . | safeCSS }}
+  </style>
 {{ end }}
 
 {{ range .Site.Params.extracssfiles }}
