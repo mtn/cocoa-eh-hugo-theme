@@ -52,7 +52,7 @@ git clone https://github.com/fuegowolf/cocoa-eh-hugo-theme.git themes/cocoa-eh
 Then, generate your site's files by running:
 
 ````
-hugo -t cocoa-eh
+hugo new site cocoa-eh
 ````
 
 If you want a simple blog you can just use the `exampleSite`, however if you desire a more complex website you can build it with the [wiki](https://github.com/fuegowolf/cocoa-eh-hugo-theme/wiki).
