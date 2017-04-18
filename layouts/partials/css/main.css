@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nexa Bold';
-  src: url('../fonts/Nexa Bold.otf');
+  src: url('/fonts/Nexa Bold.otf');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -82,8 +82,8 @@ body {
   justify-content: flex-start;
   width: 100%;
   min-height: 100%;
-  font-weight: 500;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   color: #111111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -180,10 +180,10 @@ section.header nav ul a:last-child {
 }
 section.header nav ul li {
   color: #555555;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -266,10 +266,10 @@ section.main .content .posts {
 }
 section.main .content .page-heading {
   font-size: 20px;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 700;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
-  font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -355,8 +355,8 @@ section.main .container.f04 .content {
 }
 section.main .container.f04 .content .num {
   margin: 30px 0px 30px 0;
-  font-weight: 200;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 50px;
 }
 section.main .container.f04 .content .detail {
@@ -434,7 +434,7 @@ section.main .content .markdown {
   font-size: 1.1em;
   line-height: 1.75em;
   color: #313537;
-  font-family: 'Merriweather', sans-serif;
+  font-family: serif;
   font-weight: 300;
 }
 section.main .content .markdown h1,
@@ -444,7 +444,7 @@ section.main .content .markdown h4,
 section.main .content .markdown h5,
 section.main .content .markdown h6 {
   font-size: 22px;
-  font-family: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
@@ -475,7 +475,7 @@ section.main .content .markdown h6 {
 }
 section.main .content .markdown code,
 section.main .content .markdown pre {
-  font-family: 'Ubuntu Mono', 'Menlo', monospace;
+  font-family: 'Menlo', monospace;
   font-size: 0.98rem;
   background-color: #f7f7f7;
 }
@@ -652,4 +652,28 @@ section.main .content .navigation a {
   text-align: center;
   font-style: italic;
   color: #313537;
+}
+
+/* Fonts */
+
+.wf-raleway-n4-active body, 
+.wf-raleway-n4-active section.header nav ul li,
+.wf-raleway-n7-active section.main .content .page-heading,
+.wf-raleway-n2-active section.main .container.f04 .content .num,
+.wf-raleway-n7-active section.main .content .markdown h1,
+.wf-raleway-n7-active section.main .content .markdown h2,
+.wf-raleway-n7-active section.main .content .markdown h3,
+.wf-raleway-n7-active section.main .content .markdown h4,
+.wf-raleway-n7-active section.main .content .markdown h5,
+.wf-raleway-n7-active section.main .content .markdown h6 {
+  font-family: 'Raleway';
+}
+
+.wf-merriweather-n3-active section.main .content .markdown {
+  font-family: 'Merriweather';
+}
+
+.wf-ubuntu-mono-n4-active section.main .content .markdown code,
+.wf-ubuntu-mono-n4-active section.main .content .markdown pre {
+  font-family: 'Ubuntu Mono';
 }
