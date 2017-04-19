@@ -19,17 +19,33 @@ You can use this theme either for your blog or your personal website. A demo is 
 
 ## Features
 
-* Suited for blogging and personal webpages.
+Simple but complete, here are the main features of this theme :
+
 * Possibility to have sections with a header and a list of articles.
 * Possibility to have single pages.
-* Homepage with latest and best posts
-* Syntax highlighting with hightlightjs.
+* Homepage with latest and best posts.
+* Syntax highlighting with `hightlightjs`.
 * Progressive images.
 * Twitter cards support.
 * Disqus support.
 * Responsive and **blazing fast**.
 
-#### Differences from the original Cocoa
+#### Typography
+
+The **typography** is what makes Cocoa-EH look cool, here are the fonts used :
+
+* Nexa Bold for the blog name, a strong and opinionated font
+* Raleway for the titles, light but clearly visible
+* Merriweather for the text, an awesome sans serif font to read without difficulties
+* Ubuntu Mono for the code
+
+#### Blazing fast
+
+Everything is made here to make the theme **really fast** to load : inline CSS, deferred Javascript, fonts loaded in an asynchronous way with replacement font when they're not loaded, etc. ...
+
+> With gzip enabled, this theme takes less than **400**ms to load entirely, and the content is readable at only **50**ms. Rank 99/100 on Pagespeed.
+
+### Differences from the original Cocoa
 
 This theme is less minimalist than the original Cocoa, with some new features :
 
