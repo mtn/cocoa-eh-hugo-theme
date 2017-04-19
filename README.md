@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000?style=plastic)](https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE)
 
-**Cocoa Enhanced** is a clean and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with cool typography. The main goal of this theme is to be simple but highly customizable.
+**Cocoa Enhanced** is a clean, fast and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with cool typography. The main goal of this theme is to be simple and fast but highly customizable.
 
 You can use this theme either for your blog or your personal website. A demo is available [here](https://kodewolf.com).
 
@@ -28,22 +28,21 @@ Simple but complete, here are the main features of this theme :
 * Progressive images.
 * Twitter cards support.
 * Disqus support.
-* Responsive and **blazing fast**.
 
 #### Typography
 
 The **typography** is what makes Cocoa-EH look cool, here are the fonts used :
 
-* Nexa Bold for the blog name, a strong and opinionated font
-* Raleway for the titles, light but clearly visible
-* Merriweather for the text, an awesome sans serif font to read without difficulties
-* Ubuntu Mono for the code
+* *Nexa Bold* for the blog name, a strong and opinionated font
+* *Raleway* for the titles, light but clearly visible
+* *Merriweather* for the text, an awesome sans serif font to read without difficulties
+* *Ubuntu Mono* for the code
 
 #### Blazing fast
 
-Everything is made here to make the theme **really fast** to load : inline CSS, deferred Javascript, fonts loaded in an asynchronous way with replacement font when they're not loaded, etc. ...
+Everything is made here to make the theme **really fast** to load : inline CSS, deferred Javascript, fonts loaded in an asynchronous way with replacement fonts when they're not loaded, etc. ... Even with a GPRS connection, your blog is readable.
 
-> With gzip enabled, this theme takes less than **400**ms to load entirely, and the content is readable at only **50**ms. Rank 99/100 on Pagespeed.
+> With gzip enabled, this theme takes less than **400**ms to load entirely, and the content is readable at only **50**ms. Also scores 99/100 on Pagespeed.
 
 ### Differences from the original Cocoa
 
