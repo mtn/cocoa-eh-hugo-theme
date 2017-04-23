@@ -1,5 +1,11 @@
 # Changelog
 
+> v1.1.0
+
+- Add more speed and asynchronous loading, of fonts especially
+- Add more languages to `highlightjs` that are nowadays really used, like Rust, Go, Docker, Clojure, etc. ...
+- Some fixes with some Pull Requests (thx to @davidskeck, @mtn and @maiki)
+
 > v1.0.0
 
 - Change the set of fonts to **Nexa Bold, Raleway and Merriweather**.
