@@ -1,13 +1,37 @@
 <!-- CSS -->
 
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.v1.0.0.css">
+<style media="screen">
+  {{ partial "css/main.css" . | safeCSS }}
+</style>
+<style media="(min-width: 600px)">
+  {{ partial "css/min600px.css" . | safeCSS }}
+</style>
+<style media="(min-width: 769px)">
+  {{ partial "css/min769px.css" . | safeCSS }}
+</style>
+
+<noscript>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+</noscript>
 
 {{ if .Site.Params.highlightjs }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.min.css">
+  <style type="text/css" media="screen">
+    {{ partial "css/highlight.min.css" . | safeCSS }}
+  </style>
 {{ end }}
 
 {{ if .Site.Params.progressively }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/progressively.min.css">
+  <style type="text/css" media="screen">
+    {{ partial "css/progressively.min.css" . | safeCSS }}
+  </style>
+{{ end }}
+
+{{ if .Site.Params.colors }}
+  <style type="text/css" media="screen">
+    {{ partial "css/colors.css" . | safeCSS }}
+  </style>
 {{ end }}
 
 {{ range .Site.Params.extracssfiles }}
