@@ -1,49 +1,46 @@
-<section class="footer">
-    <div class="container">
-        <div class="copyright">
+      <section class="container-fluid footer">
+        <div class="container">
+          <div class="copyright">
+            {{ if .Site.Params.copyright }}
+                <a href="{{ .Site.BaseURL }}license">{{ .Site.Params.copyright}}</a>
+            {{ end }}
+          </div>
+          <div class="icons">
 
-        {{ if .Site.Params.copyright }}
-            <a href="{{ .Site.BaseURL }}license">{{ .Site.Params.copyright}}</a>
-        {{ end }}
+            {{ if .Site.Params.github }}
+                <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
+                    <img class="icon" src="/img/github.svg" alt="github" />
+                </a>
+            {{ end }}
 
+            {{ if .Site.Params.twitter }}
+                <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
+                    <img class="icon" src="/img/twitter.svg" alt="twitter" />
+                </a>
+            {{ end }}
+
+            {{ if .Site.Params.linkedin }}
+                <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
+                    <img class="icon" src="/img/linkedin.svg" alt="linkedin" />
+                </a>
+            {{ end }}
+
+            {{ if .Site.Params.email }}
+                <a href="mailto:{{ .Site.Params.email }}">
+                    <img class="icon" src="/img/email.svg" alt="email" />
+                </a>
+            {{ end }}
+
+            {{ if .Site.RSSLink }}
+                <a href="{{ .Site.RSSLink }}">
+                    <img class="icon" src="/img/rss.svg" alt="rss" />
+                </a>
+            {{ end }}
+          </div>
         </div>
-        <div class="icons">
-
-        {{ if .Site.Params.github }}
-            <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
-                <img class="icon" src="/img/github.svg" alt="github" />
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.twitter }}
-            <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
-                <img class="icon" src="/img/twitter.svg" alt="twitter" />
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.linkedin }}
-            <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
-                <img class="icon" src="/img/linkedin.svg" alt="linkedin" />
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.email }}
-            <a href="mailto:{{ .Site.Params.email }}">
-                <img class="icon" src="/img/email.svg" alt="email" />
-            </a>
-        {{ end }}
-
-        {{ if .Site.RSSLink }}
-            <a href="{{ .Site.RSSLink }}">
-                <img class="icon" src="/img/rss.svg" alt="rss" />
-            </a>
-        {{ end }}
-
         </div>
-    </div>
-</section>
-
+    </section>
 {{ partial "footer_scripts" . }}
-
+</div>
 </body>
 </html>
