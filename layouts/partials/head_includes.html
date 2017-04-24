@@ -1,5 +1,3 @@
-<!-- CSS -->
-
 
 <!-- bootstrap css -->
 
@@ -8,6 +6,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+<!-- CSS -->
 
 
 
@@ -25,11 +25,6 @@
   <link rel="stylesheet" href="{{ . | absURL }}">
 {{ end }} -->
 
-<!-- CUSTOM STYLES-->
-{{ range .Site.Params.customCSS }}
-    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
-{{ end }}
-<!--CUSTOM STYLES END-->
 
 <!-- Icon -->
 <link rel="shortcut icon"
@@ -44,3 +39,11 @@
 {{ if .RSSLink }}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
+
+
+
+<!-- CUSTOM STYLES-->
+{{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+{{ end }}
+<!--CUSTOM STYLES END-->
