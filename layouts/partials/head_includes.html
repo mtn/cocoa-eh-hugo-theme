@@ -1,4 +1,15 @@
+
+<!-- bootstrap css -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 <!-- CSS -->
+
+
 
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.v1.0.0.css">
 
@@ -9,16 +20,11 @@
 {{ if .Site.Params.progressively }}
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/progressively.min.css">
 {{ end }}
-
+<!--
 {{ range .Site.Params.extracssfiles }}
   <link rel="stylesheet" href="{{ . | absURL }}">
-{{ end }}
+{{ end }} -->
 
-<!-- CUSTOM STYLES-->
-{{ range .Site.Params.customCSS }}
-    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
-{{ end }}
-<!--CUSTOM STYLES END-->
 
 <!-- Icon -->
 <link rel="shortcut icon"
@@ -33,3 +39,11 @@
 {{ if .RSSLink }}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
+
+
+
+<!-- CUSTOM STYLES-->
+{{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+{{ end }}
+<!--CUSTOM STYLES END-->

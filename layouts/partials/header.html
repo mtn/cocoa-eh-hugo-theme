@@ -2,37 +2,70 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 {{ partial "head.html" . }}
-
 <body>
 
-{{ if .IsPage }}
-<section class="header">
-{{ else }}
-<section class="header header-home">
-{{ end }}
-    <div class="container">
-        <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a>
-        <div class="content">
-            <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
-            <nav>
-                <ul>
-                    {{ if ne (len (where .Site.RegularPages "Section" "blog")) 0 }}
-                        <a href="{{ .Site.BaseURL }}blog/"><li>Blog</li></a>
-                    {{ end }}
-                    {{ range .Site.Sections }}
-                        {{ range first 1 (where .Pages "Section" "ne" "")}}
-                            {{ if ne .Section "blog"}}
-                            <a href="{{ .Section | urlize | absURL }}"><li>{{ .Section }}</li></a>
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-                    {{ range where .Site.RegularPages "Section" ""}}
-                        {{ if (ne .Title "License") | and (ne .Title "Home") | and (not (in .Site.Params.customPages .Title))}}
-                            <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
-                        {{ end }}
-                    {{ end }}
-                </ul>
-            </nav>
-        </div>
+  <div class="container-fluid">
+    <section class="nav">
+    <div class="navbar navbar-default navbar-static-top">
+
+      <div class="brand">
+        <a href="{{ .Site.BaseURL }}" class="logo"><img src="{{ .Site.Params.logofile | absURL }}" alt="logo"/></a>
+        <a href="https://www.huynle.com/"><div class="name"><h1>Huy Le</h1></div></a>
+      </div>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar9">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div id="navbar9" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          {{ range .Site.Sections }}
+              {{ range first 1 (where .Pages "Section" "ne" "")}}
+                  {{ if ne .Section "blog"}}
+                  <li><a href="{{ .Section | urlize | absURL }}">{{ .Section }}</li></a>
+                  {{ end }}
+              {{ end }}
+          {{ end }}
+          {{ range where .Site.RegularPages "Section" ""}}
+              {{ if (ne .Title "License") | and (ne .Title "Home") | and (not (in .Site.Params.customPages .Title))}}
+                  <li><a href="{{ .Permalink }}">{{ .Title }}</li></a>
+              {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+
     </div>
-</section>
+  </section>
+  </div>
+
+
+<!--
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a></li>
+            {{ if ne (len (where .Site.RegularPages "Section" "blog")) 0 }}
+                <a href="{{ .Site.BaseURL }}blog/"><li>Blog</li></a>
+            {{ end }}
+            {{ range .Site.Sections }}
+                {{ range first 1 (where .Pages "Section" "ne" "")}}
+                    {{ if ne .Section "blog"}}
+                    <li><a href="{{ .Section | urlize | absURL }}">{{ .Section }}</li></a>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            {{ range where .Site.RegularPages "Section" ""}}
+                {{ if (ne .Title "License") | and (ne .Title "Home") | and (not (in .Site.Params.customPages .Title))}}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</li></a>
+                {{ end }}
+            {{ end }}
+        </ul>
+      </div>
+    </div>
+  </nav> -->
