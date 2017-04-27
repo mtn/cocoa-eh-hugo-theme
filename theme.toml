@@ -1,11 +1,11 @@
 name = "Cocoa-EH"
 license = "MIT"
 licenselink = "https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE.md"
-description = "A enhanced version of Cocoa. Consistent, responsive theme with clean typography"
+description = "Cocoa Enhanced is a clean, fast and responsive theme with cool typography."
 homepage = "https://github.com/fuegowolf/cocoa-eh-hugo-theme"
-tags = ["raleway", "minimal", "clean", "comments"]
-features = ["blog", "responsive", "404", "icons", "disqus", "metadata"]
-min_version = 0.18
+tags = ["clean", "fast", "responsive", "typography"]
+features = ["flexible", "fast", "highlights", "progressive images", "disqus"]
+min_version = 0.20.2
 
 [author]
     name = "Alexis Tacnet"
