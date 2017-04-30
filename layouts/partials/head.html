@@ -8,6 +8,15 @@
     {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Site.Title }} - {{ .Title }} {{ end }}
 {{ end }}
 </title>
+
 <link rel="canonical" href="{{ .Permalink }}">
+
 {{ partial "head_includes.html" . }}
+
+{{ if .Params.ga.async }}
+  {{ template "_internal/google_analytics_async.html" . }}
+{{ else }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
 </head>

@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
-<section class="main">
-    <div class="container">
+    <section class="container-fluid main">
+      <!-- <section class="main"> -->
+
         <div class="content">
             {{ range where .Data.Pages "Title" "Home" }}
                 <div class="markdown">
@@ -43,6 +44,7 @@
             {{ end }}
             </div>
         </div>
-    </div>
 </section>
+<!-- </div> -->
+
 {{ partial "footer.html" . }}
