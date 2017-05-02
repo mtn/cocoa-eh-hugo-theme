@@ -144,6 +144,12 @@ section.header .container {
   -ms-justify-content: center;
   justify-content: center;
 }
+
+section.header .navbar {
+  width: 100%;
+  background-color: rgba(0,0,0,0.0);
+}
+
 section.header .content {
   display: -webkit-flex;
   display: -moz-flex;
