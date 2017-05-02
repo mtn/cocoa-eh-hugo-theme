@@ -1,10 +1,12 @@
 {{ partial "header.html" . }}
 <section class="main">
-    <div class="container-fluid">
+    <div class="container">
         <div class="content">
             <div class="posts">
                 <div class="page-heading">Posts about {{ .Title }}</div>
                 <ul>
+                  {{ range (first .Site.Params.latestpostcount (where .Pages "Type" "blog")).GroupByDate "Jan, 2006" "desc" }}
+                    <li class="groupby">{{ .Key }}</li>
                     {{ range .Data.Pages.ByPublishDate }}
                         {{ partial "li.html" . }}
                     {{ end }}
