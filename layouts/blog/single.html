@@ -25,6 +25,18 @@
                       </ul>
                   </div>
               </div>
+              <div>
+                <ul class="update-content">
+                  {{ if .Params.updates }}
+                    <div class="updates-heading">Updates:</div>
+                    {{ range .Params.updates }}
+                      <li>
+                        {{ . }}
+                      </li>
+                    {{ end }}
+                  {{ end }}
+                </ul>
+              </div>
           </div>
           <div class="markdown">
               {{ partial "content" . }}
