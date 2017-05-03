@@ -355,6 +355,7 @@ section.main .content .title-container {
   -ms-justify-content: space-between;
   justify-content: space-between;
 }
+
 section.main .content .posts {
   margin-bottom: 4em;
 }
@@ -370,9 +371,24 @@ section.main .content .page-heading {
   color: #333333;
   margin-bottom: 16px;
 }
-section.main .content .front-matter .page-heading {
+section.main .content .front-matter .page-heading{
   margin-bottom: 0;
 }
+
+section.main .content .front-matter .updates-heading{
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+section.main .content .front-matter .update-content{
+  font-size: 14px;
+  color: rgb(121, 2, 2);
+  margin-bottom: 30px;
+}
+section.main .content .front-matter .update-content li{
+  margin-left: 10px;
+}
+
 section.main .content .front-matter .meta {
   font-size: 14px;
   color: #666666;
@@ -381,7 +397,7 @@ section.main .content .front-matter .meta {
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
 }
 section.main .content .front-matter .date,
 section.main .content .front-matter .author,

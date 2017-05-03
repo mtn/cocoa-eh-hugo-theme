@@ -3,9 +3,22 @@
     <div class="container">
         <div class="content">
             {{ $globalTitle := .Title}}
+
             <div class="markdown">
                 {{ range .Data.Pages }}
                     {{ if eq .Title $globalTitle }}
+                        <div class="front-matter">
+                          <ul class="update-content">
+                            {{ if .Params.updates }}
+                              <div class="updates-heading">Updates:</div>
+                              {{ range .Params.updates }}
+                                <li>
+                                  {{ . }}
+                                </li>
+                              {{ end }}
+                            {{ end }}
+                          </ul>
+                        </div>
                         {{ .Content }}
                     {{ end }}
                 {{ end }}
