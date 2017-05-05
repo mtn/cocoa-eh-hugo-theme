@@ -23,6 +23,7 @@ logofile = "img/logo.png"
 faviconfile = "img/logo.png"
 highlightjs = true
 progressively = true
+share = true
 latestpostcount = 5
 github = "example"
 email = "you@example.com"

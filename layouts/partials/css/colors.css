@@ -59,3 +59,7 @@ section.main .content .markdown pre, section.main .content .markdown pre code {
 .hljs-built_in, .hljs-bullet, .hljs-code, .hljs-addition {
     color: {{ .Param "colors.type" }};
 }
+
+.ssk {
+    background-color: {{ .Param "colors.trivial" }};
+}
