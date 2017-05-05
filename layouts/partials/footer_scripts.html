@@ -33,10 +33,7 @@
       progressively.init({delay: 30, throttle: 50});
     {{ end }}
     {{ if .Site.Params.share }}
-      SocialShareKit.init({
-        url: '{{ .Permalink }}',
-        text: '{{ .Title }}'
-      });
+      SocialShareKit.init();
     {{ end }}
   };
 </script>
