@@ -33,7 +33,12 @@
       progressively.init({delay: 30, throttle: 50});
     {{ end }}
     {{ if .Site.Params.share }}
-      SocialShareKit.init();
+      SocialShareKit.init({
+        twitter: {
+            text: '',
+            {{ if .Site.Params.twitter }}via: '{{ .Site.Params.twitter }}'{{ end }}
+        }
+      });
     {{ end }}
   };
 </script>
