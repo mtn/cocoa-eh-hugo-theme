@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nexa Bold';
-  src: url('/fonts/Nexa Bold.otf');
+  src: url('{{ .Site.BaseURL }}fonts/Nexa Bold.otf');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -495,12 +495,6 @@ section.main .content .markdown pre {
   word-break: break-all;
   word-wrap: break-word;
 }
-@media (min-width: 769px) {
-  section.main .content .markdown pre {
-    width: 110%;
-    margin-left: -4%;
-  }
-}
 section.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
   padding: 0;
@@ -625,6 +619,7 @@ section.main .content .navigation {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  padding: 2em;
 }
 section.main .content .navigation div {
   display: -webkit-flex;
@@ -648,7 +643,7 @@ section.main .content .navigation .icon {
 }
 section.main .content .navigation a {
   width: 250px;
-  margin-left: 1em;
+  margin: 0 1em;
   text-align: center;
   font-style: italic;
   color: #313537;
