@@ -23,6 +23,14 @@
                           {{ end }}
                         </ul>
                     </div>
+                    <div class="tags">
+                        <ul>
+                          {{ range .Params.socialLinks }}
+                            <div class="middot"></div>
+                            <li><a href="{{ index . 1 }}">{{ index . 0 }}</a> </li>
+                          {{ end }}
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="markdown">
