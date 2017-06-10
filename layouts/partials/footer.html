@@ -1,5 +1,12 @@
 <section class="footer">
     <div class="container">
+
+        {{ if .Site.Params.githubRepo }}
+        <div class="copyright">
+            <a href="https://github.com/{{ .Site.Params.githubRepo }}/tree/master/content/{{ .File.Path }}" target="_blank">View this post on GitHub</a>
+        </div>
+        {{ end }}
+
         <div class="copyright">
 
         {{ if .Site.Params.copyright }}
