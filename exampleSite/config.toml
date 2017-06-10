@@ -30,6 +30,7 @@ linkedin = "john-example-aa80ue8è"
 twitter = "example"
 social_banner = "img/banner.png"
 posts_navigation = true
+# githubRepo = "githubUsername/repositoryName"
 
 [params.colors]
 identifier = "#527fc1f"
