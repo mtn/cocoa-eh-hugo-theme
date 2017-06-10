@@ -30,6 +30,7 @@ linkedin = "john-example-aa80ue8è"
 twitter = "example"
 social_banner = "img/banner.png"
 posts_navigation = true
+# issoHost = "comments.domain.tld:1234"
 
 [params.colors]
 identifier = "#527fc1f"
