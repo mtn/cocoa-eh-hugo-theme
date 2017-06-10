@@ -38,6 +38,14 @@
   <link rel="stylesheet" href="{{ . | absURL }}">
 {{ end }}
 
+{{ if .Site.Params.issoHost }}
+  <style type="text/css" media="screen">
+    .isso section {
+      margin: 0px;
+    }
+  </style>
+{{ end }}
+
 <!-- Icon -->
 <link rel="shortcut icon"
 {{ if .Site.Params.faviconfile }}

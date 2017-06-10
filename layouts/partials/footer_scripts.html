@@ -18,6 +18,15 @@
   <script src="{{ .Site.BaseURL }}js/progressively.min.js" defer></script>
 {{ end }}
 
+{{ if .Site.Params.issoHost }}
+<script
+  data-isso="//{{ .Site.Params.issoHost }}/"
+  data-isso-css="true"
+  data-isso-lang="{{ .Site.LanguageCode }}"
+  src="//{{ .Site.Params.issoHost }}/js/embed.min.js"
+></script>
+{{ end }}
+
 {{ template "_internal/google_analytics_async.html" . }}
 
 <script>

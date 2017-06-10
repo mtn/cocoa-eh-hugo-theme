@@ -50,6 +50,9 @@
             <div class="disqus">
                 {{ template "_internal/disqus.html" . }}
             </div>
+            {{ if .Site.Params.issoHost }}
+            <div class="isso" id="isso-thread"></div>
+            {{ end }}
         </div>
     </div>
 </section>
