@@ -28,6 +28,12 @@
   </style>
 {{ end }}
 
+{{ if .Site.Params.share }}
+  <style type="text/css" media="screen">
+    {{ partial "css/social-share-kit.css" . | safeCSS }}
+  </style>
+{{ end }}
+
 {{ if .Site.Params.colors }}
   <style type="text/css" media="screen">
     {{ partial "css/colors.css" . | safeCSS }}

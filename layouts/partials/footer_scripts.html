@@ -18,6 +18,7 @@
   <script src="{{ .Site.BaseURL }}js/progressively.min.js" defer></script>
 {{ end }}
 
+
 {{ if .Site.Params.issoHost }}
 <script
   data-isso="//{{ .Site.Params.issoHost }}/"
@@ -25,6 +26,10 @@
   data-isso-lang="{{ .Site.LanguageCode }}"
   src="//{{ .Site.Params.issoHost }}/js/embed.min.js"
 ></script>
+{{ end }}
+
+{{ if .Site.Params.share }}
+  <script src="{{ .Site.BaseURL }}js/social-share-kit.min.js" defer></script>
 {{ end }}
 
 {{ template "_internal/google_analytics_async.html" . }}
@@ -36,6 +41,14 @@
     {{ end }}
     {{ if .Site.Params.progressively }}
       progressively.init({delay: 30, throttle: 50});
+    {{ end }}
+    {{ if .Site.Params.share }}
+      SocialShareKit.init({
+        twitter: {
+            text: '',
+            {{ if .Site.Params.twitter }}via: '{{ .Site.Params.twitter }}'{{ end }}
+        }
+      });
     {{ end }}
   };
 </script>
