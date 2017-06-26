@@ -28,6 +28,12 @@
   </style>
 {{ end }}
 
+{{ if .Site.Params.share }}
+  <style type="text/css" media="screen">
+    {{ partial "css/social-share-kit.css" . | safeCSS }}
+  </style>
+{{ end }}
+
 {{ if .Site.Params.colors }}
   <style type="text/css" media="screen">
     {{ partial "css/colors.css" . | safeCSS }}
@@ -36,6 +42,14 @@
 
 {{ range .Site.Params.extracssfiles }}
   <link rel="stylesheet" href="{{ . | absURL }}">
+{{ end }}
+
+{{ if .Site.Params.issoHost }}
+  <style type="text/css" media="screen">
+    .isso section {
+      margin: 0px;
+    }
+  </style>
 {{ end }}
 
 <!-- Icon -->

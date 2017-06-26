@@ -23,12 +23,32 @@
                           {{ end }}
                         </ul>
                     </div>
+                    <div class="tags">
+                        <ul>
+                          {{ if isset .Params "hacker_news_id" }}
+                            <div class="middot"></div>
+                            <li><a href="https://news.ycombinator.com/item?id={{ .Params.hacker_news_id }}">Hacker News</a> </li>
+                          {{ end }}
+                          {{ if isset .Params "lobsters_id" }}
+                            <div class="middot"></div>
+                            <li><a href="https://lobste.rs/s/{{ .Params.lobsters_id }}">Lobsters</a> </li>
+                          {{ end }}
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="markdown">
                 {{ partial "content" . }}
                 <br>
             </div>
+            {{ if .Site.Params.share }}
+            <div class="share">
+                <a href="" class="ssk ssk-facebook"></a>
+                <a href="" class="ssk ssk-twitter"></a>
+                <a href="" class="ssk ssk-google-plus"></a>
+                <a href="" class="ssk ssk-linkedin"></a>
+            </div>
+            {{ end }}
             {{ if .Site.Params.posts_navigation }}
                 <div class="navigation">
                     {{ if .PrevInSection }}
@@ -50,6 +70,9 @@
             <div class="disqus">
                 {{ template "_internal/disqus.html" . }}
             </div>
+            {{ if .Site.Params.issoHost }}
+            <div class="isso" id="isso-thread"></div>
+            {{ end }}
         </div>
     </div>
 </section>
