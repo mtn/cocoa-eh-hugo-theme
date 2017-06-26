@@ -1,5 +1,13 @@
 # Changelog
 
+> v1.2.0
+
+- Add PR #39 : Add a URL for licence
+- Add PR #40 : Add a github repo for the blog
+- Add PR #38 : Add a HackerNews and lobste.rs link in metadatas
+- Add PR #41 : Add FB account in social links
+- Add PR #42 : Add the support for the comment framework Isso
+
 > v1.1.0
 
 - Add more speed and asynchronous loading, of fonts especially
