@@ -33,6 +33,7 @@ twitter = "example"
 facebook = "facebook_id"
 social_banner = "img/banner.png"
 posts_navigation = true
+# issoHost = "comments.domain.tld:1234"
 # githubRepo = "githubUsername/repositoryName"
 
 [params.colors]
