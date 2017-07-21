@@ -19,17 +19,22 @@ dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Example blog"
 copyright = "Copyright © 2015 Nishanth Shanmugham"
+# copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
 logofile = "img/logo.png"
 faviconfile = "img/logo.png"
 highlightjs = true
 progressively = true
+share = true
 latestpostcount = 5
 github = "example"
 email = "you@example.com"
 linkedin = "john-example-aa80ue8è"
 twitter = "example"
+facebook = "facebook_id"
 social_banner = "img/banner.png"
 posts_navigation = true
+# issoHost = "comments.domain.tld:1234"
+# githubRepo = "githubUsername/repositoryName"
 
 [params.colors]
 identifier = "#527fc1f"

@@ -27,7 +27,7 @@ Simple but complete, here are the main features of this theme :
 * Syntax highlighting with `hightlightjs`.
 * Progressive images.
 * Twitter cards support.
-* Disqus support.
+* Disqus and Isso support.
 
 #### Typography
 
