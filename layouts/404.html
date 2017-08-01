@@ -1,11 +1,44 @@
-{{ partial "header.html" . }}
-<section class="main">
-    <div class="container f04">
-        <div class="content">
-            <div class="num">404</div>
-            <div class="detail">Sorry, this page does not exist.</div>
-            <div class="suggestion"><a href="/">Visit home page</a></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>404</title>
+      <!-- CSS -->
+
+      <style media="screen">
+        {{ partial "css/main.css" . | safeCSS }}
+      </style>
+      <style media="(min-width: 600px)">
+        {{ partial "css/min600px.css" . | safeCSS }}
+      </style>
+      <style media="(min-width: 769px)">
+        {{ partial "css/min769px.css" . | safeCSS }}
+      </style>
+      <style>
+        .header {
+            width: initial;
+            margin-left: initial;
+            margin-right: initial;
+        }
+        .content {
+            margin-top: -60px;
+        }
+      </style>
+  </head>
+
+  <body>
+    <section class="main">
+        <img src={{ .Site.Params.logofile }} style="max-width:300px" alt="logo"></img>
+        <div class="container f04">
+            <div class="content">
+                <section class="header">
+                    <div class="name">404</div>
+                </section>
+                <div class="detail">The page you were looking for does not exist.</div>
+                <div class="suggestion"><a href="/">Visit the home page</a></div>
+            </div>
         </div>
-    </div>
-</section>
-{{ partial "footer.html" . }}
+    </section>
+  </body>
+
+</html>
