@@ -5,19 +5,7 @@
 <title>404 - Page not found</title>
 {{ partial "head_includes.html" . }}
 <style>
-.logo {
-    vertical-align: middle;
-    max-width: 300px;
-}
-.content {
-    margin: 3em auto;
-    text-align: center;
-}
-.header {
-    margin-left: initial;
-    margin-right: intial;
-    padding: 0 !important;
-}
+    {{ partial "css/404.css" . | safeCSS }}
 </style>
 </head>
 <body>
