@@ -1,16 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>404 - Page not found</title>
 {{ partial "head_includes.html" . }}
+<style>
+.logo {
+    vertical-align: middle;
+    max-width: 300px;
+}
+.content {
+    margin: 3em auto;
+    text-align: center;
+}
+.header {
+    margin-left: initial;
+    margin-right: intial;
+    padding: 0 !important;
+}
+</style>
+</head>
 <body>
-    <section class="main">
-        <img src={{ .Site.Params.logofile }} style="max-width:300px" alt="logo"></img>
-        <div class="container f04">
-            <div class="content">
-                <section class="header">
-                    <div class="name">404</div>
-                </section>
-                <div class="detail">The page you were looking for does not exist.</div>
-                <div class="suggestion"><a href="/">Visit the home page</a></div>
-            </div>
+    <img src={{ .Site.Params.logofile }} class="logo" alt="logo"></img>
+    <div class="container f04">
+        <div class="content">
+            <section class="header">
+                <div class="name">404</div>
+            </section>
+            <div class="detail">The page you were looking for does not exist.</div>
+            <div class="suggestion"><a href="/">Visit the home page</a></div>
         </div>
-    </section>
+    </div>
 </body>
-
+</html>

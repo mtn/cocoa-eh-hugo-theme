@@ -2,5 +2,7 @@
 .DS_Store
 */**/.DS_Store
 
+*.swp
+
 # exampleSite
 exampleSite/public
