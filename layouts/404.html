@@ -1,11 +1,23 @@
-{{ partial "header.html" . }}
-<section class="main">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>404 - Page not found</title>
+{{ partial "head_includes.html" . }}
+<style>
+    {{ partial "css/404.css" . | safeCSS }}
+</style>
+</head>
+<body>
+    <img src={{ .Site.Params.logofile }} class="logo" alt="logo"></img>
     <div class="container f04">
         <div class="content">
-            <div class="num">404</div>
-            <div class="detail">Sorry, this page does not exist.</div>
-            <div class="suggestion"><a href="/">Visit home page</a></div>
+            <section class="header">
+                <div class="name">404</div>
+            </section>
+            <div class="detail">The page you were looking for does not exist.</div>
+            <div class="suggestion"><a href="/">Visit the home page</a></div>
         </div>
     </div>
-</section>
-{{ partial "footer.html" . }}
+</body>
+</html>

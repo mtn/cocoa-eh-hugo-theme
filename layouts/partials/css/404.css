@@ -1,0 +1,14 @@
+.logo {
+    vertical-align: middle;
+    max-width: 300px;
+}
+.content {
+    margin: 3em auto;
+    text-align: center;
+}
+.header {
+    margin-left: initial;
+    margin-right: intial;
+    padding: 0 !important;
+}
+
