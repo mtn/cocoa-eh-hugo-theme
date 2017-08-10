@@ -1,5 +1,9 @@
 # Changelog
 
+> v1.3.0
+
+- Add PR #47 : Redesign the 404 page
+
 > v1.2.0
 
 - Add PR #39 : Add a URL for licence
