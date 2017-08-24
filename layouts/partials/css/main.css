@@ -507,7 +507,11 @@ section.main .content .markdown a code:hover {
   text-decoration: underline;
 }
 section.main .content .markdown p {
+  {{if .Site.Params.align_left}}
+  text-align: left;
+  {{else}}
   text-align: justify;
+  {{end}}
   margin-top: 0;
   margin-bottom: 1em;
 }
