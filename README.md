@@ -84,4 +84,4 @@ Pull requests, bug fixes, and new features are welcome!
 
 ## License
 
-Licensed under the MIT License. See the [LICENSE](https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE.md) file for more details.
+Licensed under the MIT License. See the [LICENSE](https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE) file for more details.
