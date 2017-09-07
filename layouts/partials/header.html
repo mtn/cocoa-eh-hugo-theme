@@ -5,7 +5,7 @@
 
 <body>
 
-{{ if .IsPage }}
+{{ if or (.Site.Params.small_banner_logo) (.IsPage) }}
 <section class="header">
 {{ else }}
 <section class="header header-home">
