@@ -1,5 +1,11 @@
 # Changelog
 
+> v1.4.0
+
+- Add PR #48 : Fix the default archetype
+- Add PR #49 : Add an `align_left` option for left text alignment
+- Add a `small_banner_logo` option to have a small logo on every page
+
 > v1.3.0
 
 - Add PR #47 : Redesign the 404 page
