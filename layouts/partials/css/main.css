@@ -309,13 +309,12 @@ div.main .content .front-matter .date,
 div.main .content .front-matter .author,
 div.main .content .front-matter .tags,
 div.main .content .front-matter .word-count,
-div.main .content .front-matter .reading-time .middot {
+div.main .content .front-matter .middot:before {
   display: none;
 }
 div.main .content .front-matter .middot:before {
   font-size: 6px;
   margin: 0 6px;
-  display: inline;
   vertical-align: middle;
   content: "•";
 }
