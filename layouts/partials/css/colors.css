@@ -6,20 +6,20 @@ a:hover {
     color: {{ .Param "colors.identifier_dark" }};
 }
 
-section.main .content .markdown, section.header .name, section.header nav ul a:hover {
+div.main .content .markdown, div.header .name, div.header nav ul a:hover {
     color: {{ .Param "colors.foreground" }};
 }
 
-section.header nav ul a {
+div.header nav ul a {
     color: {{ .Param "colors.trivial" }};
 }
 
-section.main .content .markdown code {
+div.main .content .markdown code {
     background-color: {{ .Param "colors.background" }};
     color: {{ .Param "colors.identifier" }};
 }
 
-section.main .content .markdown pre, section.main .content .markdown pre code {
+div.main .content .markdown pre, div.main .content .markdown pre code {
     background-color: {{ .Param "colors.background_dark" }};
     color: {{ .Param "colors.code" }};
 }

@@ -6,9 +6,9 @@
 <body>
 
 {{ if or (.Site.Params.small_banner_logo) (.IsPage) }}
-<section class="header">
+<div class="header column">
 {{ else }}
-<section class="header header-home">
+<div class="header header-home column">
 {{ end }}
     <div class="container">
         <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a>
@@ -35,4 +35,4 @@
             </nav>
         </div>
     </div>
-</section>
+</div>

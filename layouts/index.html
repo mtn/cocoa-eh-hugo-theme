@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-<section class="main">
+<div class="main column">
     <div class="container">
         <div class="content">
             {{ range where .Data.Pages "Title" "Home" }}
@@ -44,6 +44,6 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 {{ partial "footer.html" . }}
 
