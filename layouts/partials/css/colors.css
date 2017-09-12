@@ -6,11 +6,11 @@ a:hover {
     color: {{ .Param "colors.identifier_dark" }};
 }
 
-section.main .content .markdown, section.header .name, section.header nav ul li:hover {
+section.main .content .markdown, section.header .name, section.header nav ul a:hover {
     color: {{ .Param "colors.foreground" }};
 }
 
-section.header nav ul li {
+section.header nav ul a {
     color: {{ .Param "colors.trivial" }};
 }
 

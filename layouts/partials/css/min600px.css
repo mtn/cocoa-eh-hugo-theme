@@ -33,7 +33,7 @@ section.header-home .name-home {
 padding-top: 30px;
 font-size: 40px;
 }
-section.header-home nav ul li {
+section.header-home nav ul a {
 font-size: 18px;
 }
 section.header .content {
@@ -52,10 +52,10 @@ margin-bottom: 0;
 section.header nav ul {
 text-align: left;
 }
-section.header nav ul li {
+section.header nav ul a {
 color: #666666;
 }
-section.header nav ul li:hover {
+section.header nav ul a:hover {
 color: #333333;
 }
 section.footer {
