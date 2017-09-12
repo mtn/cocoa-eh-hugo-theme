@@ -11,27 +11,24 @@
                     <div class="date" title="{{ .Date.Format .Site.Params.dateformfull }}">{{ .Date.Format .Site.Params.dateform }}</div>
                     {{ if not .Params.noauthor }}
                         {{ if .Params.author }}
-                        <div class="author" title="{{ .Params.Author }}"><div class="middot"></div>{{ .Params.author }}</div>
+                        <div class="author middot" title="{{ .Params.Author }}">{{ .Params.author }}</div>
                         {{end}}
                     {{end}}
-                    <div class="reading-time"><div class="middot"></div>{{ .ReadingTime }} minute read</div>
+                    <div class="reading-time middot">{{ .ReadingTime }} minute read</div>
                     <div class="tags">
                         <ul>
                           {{ range .Params.tags }}
-                            <div class="middot"></div>
-                            <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+                            <li class="middot"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
                           {{ end }}
                         </ul>
                     </div>
                     <div class="tags">
                         <ul>
                           {{ if isset .Params "hacker_news_id" }}
-                            <div class="middot"></div>
-                            <li><a href="https://news.ycombinator.com/item?id={{ .Params.hacker_news_id }}">Hacker News</a> </li>
+                            <li class="middot"><a href="https://news.ycombinator.com/item?id={{ .Params.hacker_news_id }}">Hacker News</a> </li>
                           {{ end }}
                           {{ if isset .Params "lobsters_id" }}
-                            <div class="middot"></div>
-                            <li><a href="https://lobste.rs/s/{{ .Params.lobsters_id }}">Lobsters</a> </li>
+                            <li class="middot"><a href="https://lobste.rs/s/{{ .Params.lobsters_id }}">Lobsters</a> </li>
                           {{ end }}
                         </ul>
                     </div>

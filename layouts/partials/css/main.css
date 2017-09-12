@@ -312,13 +312,11 @@ div.main .content .front-matter .word-count,
 div.main .content .front-matter .reading-time .middot {
   display: none;
 }
-div.main .content .front-matter .middot {
+div.main .content .front-matter .middot:before {
   font-size: 6px;
   margin: 0 6px;
   display: inline;
   vertical-align: middle;
-}
-div.main .content .front-matter .middot:before {
   content: "•";
 }
 div.main .content .front-matter .tags ul {
