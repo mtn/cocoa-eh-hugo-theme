@@ -1,3 +1,85 @@
+{{ if in .Site.Params.blogs .Section }}
+
+{{ partial "header.html" . }}
+
+<div class="main post non-narrow zero-top-spacing column">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    {{ partial "page-heading" . }}
+                </div>
+                <div class="meta">
+                    <div class="date" title="{{ .Date.Format .Site.Params.dateformfull }}">{{ .Date.Format .Site.Params.dateform }}</div>
+                    {{ if not .Params.noauthor }}
+                        {{ if .Params.author }}
+                        <div class="author middot" title="{{ .Params.Author }}">{{ .Params.author }}</div>
+                        {{end}}
+                    {{end}}
+                    <div class="reading-time middot">{{ .ReadingTime }} minute read</div>
+                    <div class="tags">
+                        <ul>
+                          {{ range .Params.tags }}
+                            <li class="middot"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+                          {{ end }}
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          {{ if isset .Params "hacker_news_id" }}
+                            <li class="middot"><a href="https://news.ycombinator.com/item?id={{ .Params.hacker_news_id }}">Hacker News</a> </li>
+                          {{ end }}
+                          {{ if isset .Params "lobsters_id" }}
+                            <li class="middot"><a href="https://lobste.rs/s/{{ .Params.lobsters_id }}">Lobsters</a> </li>
+                          {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="markdown">
+                {{ partial "content" . }}
+                <br>
+            </div>
+            {{ if .Site.Params.share }}
+            <div class="share">
+                <a href="" class="ssk ssk-facebook"></a>
+                <a href="" class="ssk ssk-twitter"></a>
+                <a href="" class="ssk ssk-google-plus"></a>
+                <a href="" class="ssk ssk-linkedin"></a>
+            </div>
+            {{ end }}
+            {{ if .Site.Params.posts_navigation }}
+                <div class="navigation">
+                    {{ if .PrevInSection }}
+                    <div>
+                        <img class="icon" src="/img/back.svg" alt="back" />
+                        <a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a>
+                    </div>
+                    {{ end }}
+                    <div style="width: 100%;"></div>
+                    {{ if .NextInSection }}
+                    <div>
+                        <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a>
+                        <img class="icon" src="/img/next.svg" alt="next" />
+                    </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+            <br>
+            <div class="disqus">
+                {{ template "_internal/disqus.html" . }}
+            </div>
+            {{ if .Site.Params.issoHost }}
+            <div class="isso" id="isso-thread"></div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
+
+{{else}}
+
 {{ partial "header.html" . }}
 <div class="main column">
     <div class="container">
@@ -10,3 +92,5 @@
     </div>
 </div>
 {{ partial "footer.html" . }}
+
+{{ end }}
