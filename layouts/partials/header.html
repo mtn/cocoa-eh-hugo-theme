@@ -6,9 +6,9 @@
 <body>
 
 {{ if or (.Site.Params.small_banner_logo) (.IsPage) }}
-<section class="header">
+<div class="header column">
 {{ else }}
-<section class="header header-home">
+<div class="header header-home column">
 {{ end }}
     <div class="container">
         <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a>
@@ -17,22 +17,22 @@
             <nav>
                 <ul>
                     {{ if ne (len (where .Site.RegularPages "Section" "blog")) 0 }}
-                        <a href="{{ .Site.BaseURL }}blog/"><li>Blog</li></a>
+                        <li><a href="{{ .Site.BaseURL }}blog/">Blog</a></li>
                     {{ end }}
                     {{ range $.Site.Home.Sections }}
                         {{ range first 1 (where .Pages "Section" "ne" "")}}
                             {{ if ne .Section "blog"}}
-                            <a href="{{ .Section | urlize | absURL }}"><li>{{ .Section }}</li></a>
+                            <li><a href="{{ .Section | urlize | absURL }}">{{ .Section }}</a></li>
                             {{ end }}
                         {{ end }}
                     {{ end }}
                     {{ range where .Site.RegularPages "Section" ""}}
                         {{ if and (ne .Title "License") (ne .Title "Home")}}
-                            <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
+                            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                         {{ end }}
                     {{ end }}
                 </ul>
             </nav>
         </div>
     </div>
-</section>
+</div>
