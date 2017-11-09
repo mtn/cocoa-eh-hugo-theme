@@ -13,133 +13,139 @@ margin-left: 100px;
 margin-right: 100px;
 max-width: 750px;
 }
-section.header {
+div.column {
+padding: 0 16px;
+margin-left: 100px;
+margin-right: 100px;
+max-width: 750px;
+}
+div.header {
 background-color: transparent;
 }
-section.header .container {
+div.header .container {
 -webkit-justify-content: flex-start;
 -moz-justify-content: flex-start;
 -ms-justify-content: flex-start;
 justify-content: flex-start;
 }
-section.header .container .logo {
+div.header .container .logo {
 margin: 0;
 }
-section.header-home .container .logo {
+div.header-home .container .logo {
 max-width: 180px;
 margin-left: 20px;
 }
-section.header-home .name-home {
+div.header-home .name-home {
 padding-top: 30px;
 font-size: 40px;
 }
-section.header-home nav ul li {
+div.header-home nav ul a {
 font-size: 18px;
 }
-section.header .content {
+div.header .content {
 -webkit-align-items: flex-start;
 -moz-align-items: flex-start;
 -ms-align-items: flex-start;
 align-items: flex-start;
 }
-section.header .name {
+div.header .name {
 color: #333333;
 }
-section.header nav {
+div.header nav {
 font-size: 14px;
 margin-bottom: 0;
 }
-section.header nav ul {
+div.header nav ul {
 text-align: left;
 }
-section.header nav ul li {
+div.header nav ul a {
 color: #666666;
 }
-section.header nav ul li:hover {
+div.header nav ul a:hover {
 color: #333333;
 }
-section.footer {
+div.footer {
 background-color: transparent;
 }
-section.footer .container {
+div.footer .container {
 flex-direction: row;
 }
-section.footer .container a {
+div.footer .container a {
 margin-left: 3px;
 margin-right: 3px;
 color: #666666;
 }
-section.footer .container a:hover {
+div.footer .container a:hover {
 color: #333333;
 }
-section.footer .container a .icon {
+div.footer .container a .icon {
 font-size: 18px;
 }
-section.footer .container a .icon.larger {
+div.footer .container a .icon.larger {
 font-size: 20px;
 }
-section.main .content .front-matter .date,
-section.main .content .front-matter .author,
-section.main .content .front-matter .tags,
-section.main .content .front-matter .word-count,
-section.main .content .front-matter .reading-time .middot {
+div.main .content .front-matter .date,
+div.main .content .front-matter .author,
+div.main .content .front-matter .tags,
+div.main .content .front-matter .word-count,
+div.main .content .front-matter .middot:before {
 display: initial;
 }
-section.main .container.f04 {
+div.main .container.f04 {
 -webkit-justify-content: flex-start;
 -moz-justify-content: flex-start;
 -ms-justify-content: flex-start;
 justify-content: flex-start;
 }
-section.main .container.f04 .content {
+div.main .container.f04 .content {
 -webkit-align-items: flex-start;
 -moz-align-items: flex-start;
 -ms-align-items: flex-start;
 align-items: flex-start;
 }
-section.main .container.f04 .content .num {
+div.main .container.f04 .content .num {
 margin: 0 0 10px 0;
 font-size: 32px;
 }
-section.main .container.f04 .content .detail {
+div.main .container.f04 .content .detail {
 margin-bottom: 30px;
 }
 .container {
 padding: 0 30px;
 }
-section.header {
+div.header {
 padding-top: 60px;
 padding-bottom: 60px;
 }
-section.footer {
+div.footer {
 padding-top: 30px;
 padding-bottom: 60px;
 }
-section.main {
+div.main {
 padding-top: 0;
 }
-section.main .container .content .post-item {
+div.main .container .content .post-item {
 display: flex;
 list-style: none;
 padding-left: 1.5em;
 }
-section.main .container .content .post-item .meta {
+div.main .container .content .post-item .meta {
 display: block;
 }
-section.main.post {
+div.main.post {
 padding-top: 60px;
 padding-bottom: 60px;
 }
-section.main .content .markdown blockquote {
+div.main .content .markdown blockquote {
 padding-right: 5rem;
 padding-left: 1.25rem;
 }
-section.main .content .navigation {
+div.main .content .navigation {
 -webkit-flex-direction: row;
 -moz-flex-direction: row;
 -ms-flex-direction: row;
 flex-direction: row;
 }
-section.main .content .navigation div {
+div.main .content .navigation div {
 margin-top: 0em;
 }
