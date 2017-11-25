@@ -25,10 +25,14 @@
                     <div class="tags">
                         <ul>
                           {{ if isset .Params "hacker_news_id" }}
-                            <li class="middot"><a href="https://news.ycombinator.com/item?id={{ .Params.hacker_news_id }}">Hacker News</a> </li>
+                            {{ if ne .Params.hacker_news_id "" }}
+                              <li class="middot"><a href="https://news.ycombinator.com/item?id={{ .Params.hacker_news_id }}">Hacker News</a> </li>
+                            {{ end }}
                           {{ end }}
                           {{ if isset .Params "lobsters_id" }}
-                            <li class="middot"><a href="https://lobste.rs/s/{{ .Params.lobsters_id }}">Lobsters</a> </li>
+                            {{ if ne .Params.lobsters_id "" }}
+                              <li class="middot"><a href="https://lobste.rs/s/{{ .Params.lobsters_id }}">Lobsters</a> </li>
+                            {{ end }}
                           {{ end }}
                         </ul>
                     </div>
