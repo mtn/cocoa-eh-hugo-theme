@@ -710,3 +710,29 @@ kbd {
   line-height: 1.4;
   white-space: nowrap;
 }
+
+/* Fonts */
+
+{{ if not .Site.Params.disablefancyfonts  }}
+.wf-raleway-n4-active body, 
+.wf-raleway-n4-active div.header nav ul a,
+.wf-raleway-n7-active div.main .content .page-heading,
+.wf-raleway-n2-active div.main .container.f04 .content .num,
+.wf-raleway-n7-active div.main .content .markdown h1,
+.wf-raleway-n7-active div.main .content .markdown h2,
+.wf-raleway-n7-active div.main .content .markdown h3,
+.wf-raleway-n7-active div.main .content .markdown h4,
+.wf-raleway-n7-active div.main .content .markdown h5,
+.wf-raleway-n7-active div.main .content .markdown h6 {
+      font-family: 'Raleway';
+}
+
+.wf-merriweather-n3-active div.main .content .markdown {
+      font-family: 'Merriweather';
+}
+
+.wf-ubuntu-mono-n4-active div.main .content .markdown code,
+.wf-ubuntu-mono-n4-active div.main .content .markdown pre {
+      font-family: 'Ubuntu Mono';
+}
+{{ end  }}

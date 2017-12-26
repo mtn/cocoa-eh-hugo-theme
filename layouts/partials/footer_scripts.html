@@ -1,3 +1,4 @@
+{{ if not .Site.Params.disablefancyfonts }}
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({
@@ -6,6 +7,7 @@
     }
   });
 </script>
+{{ end }}
 
 {{ if .Site.Params.highlightjs }}
   <script src="{{ .Site.BaseURL }}js/highlight.min.js" defer></script>
