@@ -2,9 +2,9 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mtn/cocoa-eh-hugo-theme/blob/master/LICENSE)
 
-**Cocoa Enhanced** is a clean, fast and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with cool typography. The main goal of this theme is to be simple and fast but highly customizable.
+**Cocoa Enhanced** is a clean, fast, and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with cool typography. The main goal of this theme is to be simple and fast but also highly customizable.
 
-You can use this theme either for your blog or your personal website. A demo is available [here](https://kodewolf.com).
+A demo is available [here](https://kodewolf.com).
 
 > This is a fork from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements.
 
@@ -19,8 +19,6 @@ You can use this theme either for your blog or your personal website. A demo is 
 
 ## Features
 
-Simple but complete, here are the main features of this theme :
-
 * Possibility to have sections with a header and a list of articles.
 * Possibility to have single pages.
 * Homepage with latest and best posts.
@@ -28,10 +26,11 @@ Simple but complete, here are the main features of this theme :
 * Progressive images.
 * Twitter cards support.
 * Disqus and Isso support.
+* LaTeX support with MathJax.
 
 #### Typography
 
-The **typography** is what makes Cocoa-EH look cool, here are the fonts used :
+The **typography** is what makes Cocoa-EH look cool. The fonts used are:
 
 * *Nexa Bold* for the blog name, a strong and opinionated font
 * *Raleway* for the titles, light but clearly visible
@@ -40,7 +39,7 @@ The **typography** is what makes Cocoa-EH look cool, here are the fonts used :
 
 #### Blazing fast
 
-Everything is made here to make the theme **really fast** to load : inline CSS, deferred Javascript, fonts loaded in an asynchronous way with replacement fonts when they're not loaded, etc. ... Even with a GPRS connection, your blog is readable.
+Everything is made here to make the theme **really fast** to load: inline CSS, deferred Javascript, fonts loaded in an asynchronous way with replacement fonts when they're not loaded, etc. ... Even with a GPRS connection, your blog is readable.
 
 > With gzip enabled, this theme takes less than **400**ms to load entirely, and the content is readable at only **50**ms. Also scores 99/100 on Pagespeed.
 
@@ -54,7 +53,7 @@ This theme is less minimalist than the original Cocoa, with some new features :
 * Progressive images.
 * Fonts are different : stronger and sharper, with a clear identity.
 * The font size in articles is higher, the text justified and lines are more spaced.
-* More features.
+* and more...
 
 ## Getting Started 
 
@@ -70,7 +69,7 @@ Then, generate your site's files by running:
 hugo -t cocoa-eh
 ````
 
-If you want a simple blog you can just use the `exampleSite`, however if you desire a more complex website you can build it with the [wiki](https://github.com/mtn/cocoa-eh-hugo-theme/wiki).
+If you want a simple blog you can just use the `exampleSite`. The [wiki](https://github.com/mtn/cocoa-eh-hugo-theme/wiki) includes helpful details should you need more.
 
 ## Contributing
 
@@ -81,6 +80,8 @@ Pull requests, bug fixes, and new features are welcome!
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request on GitHub
+
+Please keep each pull request to a single feature -- it's okay to submit multiple pull requests at a time! This makes new features easier to review and merge. For large changes, consider making an issue beforehand to discuss.
 
 ## License
 
