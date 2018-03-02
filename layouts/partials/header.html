@@ -11,7 +11,9 @@
 <div class="header header-home column">
 {{ end }}
     <div class="container">
+        {{ if ne .Site.Params.logofile "" }}
         <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a>
+        {{ end }}
         <div class="content">
             <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
             <nav>
