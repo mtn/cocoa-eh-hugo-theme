@@ -2,9 +2,16 @@
     <div class="container">
 
         {{ if .Site.Params.githubRepo }}
-        <div class="copyright">
-            <a href="https://github.com/{{ .Site.Params.githubRepo }}/content/{{ .File.Path }}" target="_blank">View this post on GitHub</a>
-        </div>
+            {{ $length := len ( split .Site.Params.githubRepo "/" ) }}
+            {{ if eq $length 2 }}
+            <div class="copyright">
+                <a href="https://github.com/{{ .Site.Params.githubRepo }}/tree/master/content/{{ .File.Path }}" target="_blank">View this post on GitHub</a>
+            </div>
+            {{ else }}
+            <div class="copyright">
+                <a href="https://github.com/{{ .Site.Params.githubRepo }}/content/{{ .File.Path }}" target="_blank">View this post on GitHub</a>
+            </div>
+            {{ end }}
         {{ end }}
 
         <div class="copyright">
