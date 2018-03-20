@@ -11,8 +11,10 @@
 <div class="header header-home column">
 {{ end }}
     <div class="container">
-        {{ if ne .Site.Params.logofile "" }}
-        <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo" /></a>
+        {{ if (not (isset .Site.Params "logofile")) }}
+        <a href="https://github.com/mtn/cocoa-eh-hugo-theme/wiki/Configuration#logo">Logo HOWTO</a>
+        {{ else if ne .Site.Params.logofile "" }}
+        <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo"></a>
         {{ end }}
         <div class="content">
             <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
