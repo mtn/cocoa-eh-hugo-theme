@@ -25,6 +25,18 @@
         </div>
         <div class="icons">
 
+        {{ if .Site.Params._500px }}
+            <a href="https://500px.com/{{ .Site.Params._500px }}" target="_blank">
+                <img class="icon" src="{{ .Site.BaseURL }}img/500px.svg" alt="500px" />
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.gitlab }}
+            <a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank">
+                <img class="icon" src="{{ .Site.BaseURL }}img/gitlab.svg" alt="gitlab" />
+            </a>
+        {{ end }}
+
         {{ if .Site.Params.facebook }}
             <a href="https://facebook.com/{{ .Site.Params.facebook }}" target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/facebook.svg" alt="facebook" />
