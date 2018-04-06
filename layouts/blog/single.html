@@ -52,10 +52,18 @@
             </div>
             {{ if .Site.Params.share }}
             <div class="share">
-                <a href="" class="ssk ssk-facebook"></a>
-                <a href="" class="ssk ssk-twitter"></a>
-                <a href="" class="ssk ssk-google-plus"></a>
-                <a href="" class="ssk ssk-linkedin"></a>
+                  {{ if .Site.Params.share_on_fb | default true }}
+                  <a href="" class="ssk ssk-facebook"></a>
+                  {{ end }}
+                  {{ if .Site.Params.share_on_twitter | default true }}
+                  <a href="" class="ssk ssk-twitter"></a>
+                  {{ end }}
+                  {{ if .Site.Params.share_on_googleplus | default true }}
+                  <a href="" class="ssk ssk-google-plus"></a>
+                  {{ end }}
+                  {{ if .Site.Params.share_on_linkedin | default true }}
+                  <a href="" class="ssk ssk-linkedin"></a>
+                  {{ end }}
             </div>
             {{ end }}
             {{ if .Site.Params.posts_navigation }}
