@@ -165,7 +165,15 @@ div.header .name {
   font-size: 28px;
   font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
+  {{ if isset .Site.Params "title_style" }}
+      {{ if in "capitalize uppercase lowercase none full-width" .Site.Params.title_style }}
+  text-transform: {{ .Site.Params.title_style }};
+      {{ else }}
+      {{ errorf "This title_style is not a valid text-transform css parameter: %s" .Site.Params.title_style }}
+      {{ end }}
+  {{ else }}
   text-transform: uppercase;
+  {{ end }}
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
