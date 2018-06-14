@@ -71,18 +71,6 @@ hugo -t cocoa-eh
 
 If you want a simple blog you can just use the `exampleSite`. The [wiki](https://github.com/mtn/cocoa-eh-hugo-theme/wiki) includes helpful details should you need more.
 
-## Contributing
-
-Pull requests, bug fixes, and new features are welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request on GitHub
-
-Please keep each pull request to a single feature -- it's okay to submit multiple pull requests at a time! This makes new features easier to review and merge. For large changes, consider making an issue beforehand to discuss.
-
 ## License
 
 Licensed under the MIT License. See the [LICENSE](https://github.com/mtn/cocoa-eh-hugo-theme/blob/master/LICENSE) file for more details.
