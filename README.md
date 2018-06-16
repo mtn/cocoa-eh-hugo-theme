@@ -26,7 +26,7 @@ A demo is available [here](https://kodewolf.com).
 * Progressive images.
 * Twitter cards support.
 * Disqus and Isso support.
-* LaTeX support with MathJax.
+* LaTeX support with MathJax ([use `.mmark`](https://github.com/mtn/cocoa-eh-hugo-theme/issues/92)).
 
 #### Typography
 
