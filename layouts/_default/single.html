@@ -1,12 +1,9 @@
 {{ partial "header.html" . }}
-<div class="main column">
-    <div class="container">
-        <div class="content">
-            {{ partial "page-heading.html" . }}
-            <div class="markdown">
-                {{ partial "content" . }}
-            </div>
-        </div>
-    </div>
-</div>
+
+{{ if in .Site.Params.blogs .Section }}
+{{ partial "blog_single.html" . }}
+{{ else }}
+{{ partial "base_single.html" . }}
+{{ end }}
+
 {{ partial "footer.html" . }}

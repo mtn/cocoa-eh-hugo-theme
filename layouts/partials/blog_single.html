@@ -1,5 +1,3 @@
-{{ partial "header.html" . }}
-
 {{ if .Site.Params.issoHost }}
   <style type="text/css" media="screen">
     .isso section {
@@ -84,9 +82,11 @@
                 </div>
             {{ end }}
             <br>
+            {{ if .Site.Params.disqusShortname }}
             <div class="disqus">
                 {{ template "_internal/disqus.html" . }}
             </div>
+            {{ end }}
             {{ if .Site.Params.issoHost }}
             <div class="isso" id="isso-thread"></div>
             <script
@@ -95,9 +95,9 @@
                 data-isso-lang="{{ .Site.LanguageCode }}"
                 src="//{{ .Site.Params.issoHost }}/js/embed.min.js"
             ></script>
+            {{ else }}
+            this is where comments would go
             {{ end }}
         </div>
     </div>
 </div>
-
-{{ partial "footer.html" . }}
