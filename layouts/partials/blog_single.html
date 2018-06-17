@@ -87,6 +87,7 @@
                 {{ template "_internal/disqus.html" . }}
             </div>
             {{ end }}
+
             {{ if .Site.Params.issoHost }}
             <div class="isso" id="isso-thread"></div>
             <script
@@ -95,6 +96,11 @@
                 data-isso-lang="{{ .Site.LanguageCode }}"
                 src="//{{ .Site.Params.issoHost }}/js/embed.min.js"
             ></script>
+            {{ end }}
+
+            {{ if .Site.Params.commentoHost }}
+            <div id="commento"></div>
+            <script src="//{{ .Site.Params.commentoHost }}/js/commento.js"></script>
             {{ end }}
         </div>
     </div>
