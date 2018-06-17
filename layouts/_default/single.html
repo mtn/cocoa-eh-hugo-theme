@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-{{ if in .Site.Params.blogs .Section }}
+{{ if (or (in .Site.Params.blogs .Section) (and (eq "blog" .Section) (not (isset .Site.Params "blogs")))) }}
 {{ partial "blog_single.html" . }}
 {{ else }}
 {{ partial "base_single.html" . }}
