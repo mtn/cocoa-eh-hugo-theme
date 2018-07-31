@@ -61,6 +61,12 @@
             </a>
         {{ end }}
 
+        {{ if .Site.Params.keybase }}
+            <a href="https://keybase.io/{{ .Site.Params.keybase}}" target="_blank">
+                <img class="icon" src="{{ .Site.BaseURL }}img/keybase.svg" alt="keybase" />
+            </a>
+        {{ end }}
+
         {{ if .Site.Params.email }}
             <a href="mailto:{{ .Site.Params.email }}">
                 <img class="icon" src="{{ .Site.BaseURL }}img/email.svg" alt="email" />
