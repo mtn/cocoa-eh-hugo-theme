@@ -34,6 +34,7 @@ email = "you@example.com"
 linkedin = "john-example-aa80ue8è"
 twitter = "example"
 facebook = "facebook_id"
+instagram = "instagram_id"
 social_banner = "img/banner.png"
 usesmallsummarycard = true
 posts_navigation = true

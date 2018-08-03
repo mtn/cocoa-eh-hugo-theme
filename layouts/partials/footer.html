@@ -37,6 +37,12 @@
             </a>
         {{ end }}
 
+        {{ if .Site.Params.instagram }}
+            <a href="https://www.instagram.com/{{ .Site.Params.linkedin }}" target="_blank">
+                <img class="icon" src="{{ .Site.BaseURL }}img/instagram.svg" alt="instagram" />
+            </a>
+        {{ end }}
+
         {{ if .Site.Params.facebook }}
             <a href="https://facebook.com/{{ .Site.Params.facebook }}" target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/facebook.svg" alt="facebook" />
