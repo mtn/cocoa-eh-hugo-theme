@@ -5,7 +5,7 @@
 
 <body>
 
-{{ if or (.Site.Params.small_banner_logo) (.IsPage) }}
+{{ if (or (.Site.Params.small_banner_logo) (and (.IsPage) (not (.Site.Params.large_banner_logo)))) }}
 <div class="header column">
 {{ else }}
 <div class="header header-home column">
