@@ -20,18 +20,18 @@
             <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
             <nav>
                 <ul>
-                    {{ if ne (len (where .Site.RegularPages "Section" "blog")) 0 }}
-                        <li><a href="{{ .Site.BaseURL }}blog/">Blog</a></li>
+                    {{ if (and (ne (len (where .Site.RegularPages "Section" "blog")) 0) (not (in .Site.Params.exclude_headings "blog"))) }}
+                            <li><a href="{{ .Site.BaseURL }}blog/">Blog</a></li>
                     {{ end }}
                     {{ range $.Site.Home.Sections }}
                         {{ range first 1 (where .Pages "Section" "ne" "")}}
-                            {{ if ne .Section "blog"}}
+                            {{ if (and (ne .Section "blog") (not (in .Site.Params.exclude_headings (lower .Section))))}}
                             <li><a href="{{ .Section | urlize | absURL }}">{{ .Section }}</a></li>
                             {{ end }}
                         {{ end }}
                     {{ end }}
                     {{ range where .Site.RegularPages "Section" ""}}
-                        {{ if and (ne .Title "License") (ne .Title "Home")}}
+                        {{ if (and (and (ne .Title "License") (ne .Title "Home")) (not (in .Site.Params.exclude_headings (lower .Title))))}}
                             <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                         {{ end }}
                     {{ end }}
