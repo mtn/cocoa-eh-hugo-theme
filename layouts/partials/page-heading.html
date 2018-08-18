@@ -2,6 +2,10 @@
 {{ if .Params.heading }}
     {{ .Params.heading }}
 {{ else }}
+    {{ if .Params.draft }}
+    Draft::{{ .Title }}
+    {{ else }}
     {{ .Title }}
+    {{ end }}
 {{ end }}
 </div>
