@@ -46,9 +46,9 @@
             </div>
             <div class="markdown">
                 {{ partial "content" . }}
-                <br>
             </div>
             {{ if .Site.Params.share }}
+            <br>
             <div class="share">
                   {{ if .Site.Params.share_on_fb | default true }}
                   <a href="" class="ssk ssk-facebook"></a>
@@ -65,30 +65,32 @@
             </div>
             {{ end }}
             {{ if .Site.Params.posts_navigation }}
-                <div class="navigation">
-                    {{ if .PrevInSection }}
-                    <div>
-                        <img class="icon" src="/img/back.svg" alt="back" />
-                        <a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a>
-                    </div>
-                    {{ end }}
-                    <div style="width: 100%;"></div>
-                    {{ if .NextInSection }}
-                    <div>
-                        <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a>
-                        <img class="icon" src="/img/next.svg" alt="next" />
-                    </div>
-                    {{ end }}
-                </div>
-            {{ end }}
             <br>
+            <div class="navigation">
+                {{ if .PrevInSection }}
+                <div>
+                    <img class="icon" src="/img/back.svg" alt="back" />
+                    <a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a>
+                </div>
+                {{ end }}
+                <div style="width: 100%;"></div>
+                {{ if .NextInSection }}
+                <div>
+                    <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }}</a>
+                    <img class="icon" src="/img/next.svg" alt="next" />
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
             {{ if .Site.Params.disqusShortname }}
+            <br>
             <div class="disqus">
                 {{ template "_internal/disqus.html" . }}
             </div>
             {{ end }}
 
             {{ if .Site.Params.issoHost }}
+            <br>
             <div class="isso" id="isso-thread"></div>
             <script
                 data-isso="//{{ .Site.Params.issoHost }}/"
@@ -99,6 +101,7 @@
             {{ end }}
 
             {{ if .Site.Params.commentoHost }}
+            <br>
             <div id="commento"></div>
             <script src="//{{ .Site.Params.commentoHost }}/js/commento.js"></script>
             {{ end }}

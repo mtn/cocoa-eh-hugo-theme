@@ -157,7 +157,11 @@ div.header .content {
   align-items: center;
 }
 div.header .container .logo {
+  {{ if .Site.Params.enlarged }}
+  max-width: 200px;
+  {{ else }}
   max-width: 100px;
+  {{ end }}
   margin-left: -2em;
 }
 div.header .name {
@@ -271,7 +275,11 @@ div.main .container {
 }
 div.main .content {
   color: #111111;
+  {{ if .Site.Params.enlarged }}
+  font-size: 17px;
+  {{ else }}
   font-size: 16px;
+  {{ end }}
 }
 div.main .content .title-container {
   display: -webkit-flex;
@@ -285,7 +293,10 @@ div.main .content .title-container {
   justify-content: space-between;
 }
 div.main .content .posts {
+  {{ $nbPosts := len (where .Data.Pages "Params.best" true)  }}
+  {{ if gt $nbPosts 0 }}
   margin-bottom: 4em;
+  {{ end }}
 }
 div.main .content .page-heading {
   font-size: 20px;

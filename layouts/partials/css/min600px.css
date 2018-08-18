@@ -11,11 +11,19 @@ section {
 padding: 0 16px;
 margin-left: 100px;
 margin-right: 100px;
+{{ if .Site.Params.enlarged }}
+max-width: 825px;
+{{ else }}
 max-width: 750px;
+{{ end }}
 }
 div.column {
 padding: 0 16px;
+{{ if .Site.Params.enlarged }}
+max-width: 825px;
+{{ else }}
 max-width: 750px;
+{{ end }}
 }
 div.header {
 background-color: transparent;
@@ -30,8 +38,8 @@ div.header .container .logo {
 margin: 0;
 }
 div.header-home .container .logo {
-max-width: 180px;
-margin-left: 20px;
+max-width: 216px;
+margin-left: 24px;
 }
 div.header-home .name-home {
 padding-top: 30px;
@@ -116,7 +124,7 @@ padding-top: 60px;
 padding-bottom: 60px;
 }
 div.footer {
-padding-top: 30px;
+padding-top: 60px;
 padding-bottom: 60px;
 }
 div.main {
@@ -129,10 +137,6 @@ padding-left: 1.5em;
 }
 div.main .container .content .post-item .meta {
 display: block;
-}
-div.main.post {
-padding-top: 60px;
-padding-bottom: 60px;
 }
 div.main .content .markdown blockquote {
 padding-right: 5rem;
