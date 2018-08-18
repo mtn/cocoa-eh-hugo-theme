@@ -275,11 +275,7 @@ div.main .container {
 }
 div.main .content {
   color: #111111;
-  {{ if .Site.Params.enlarged }}
-  font-size: 17px;
-  {{ else }}
   font-size: 16px;
-  {{ end }}
 }
 div.main .content .title-container {
   display: -webkit-flex;
