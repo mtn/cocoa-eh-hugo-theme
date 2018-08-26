@@ -31,6 +31,12 @@
             </a>
         {{ end }}
 
+        {{ if .Site.Params.itch_io }}
+            <a href="https://{{ .Site.Params.itch_io }}.itch.io" target="_blank">
+                <img class="icon" src="{{ .Site.BaseURL }}img/itch.io.svg" alt="itch.io" />
+            </a>
+        {{ end }}
+
         {{ if .Site.Params.gitlab }}
             <a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/gitlab.svg" alt="gitlab" />
