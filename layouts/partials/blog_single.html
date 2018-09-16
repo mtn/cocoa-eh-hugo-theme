@@ -45,6 +45,9 @@
                 </div>
             </div>
             <div class="markdown">
+                {{ if .Params.toc | default false }}
+                    {{ partial "table_of_contents.html" . }}
+                {{ end }}
                 {{ partial "content" . }}
             </div>
             {{ if .Site.Params.share }}
