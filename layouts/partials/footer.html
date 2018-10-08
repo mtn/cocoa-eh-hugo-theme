@@ -79,6 +79,12 @@
             </a>
         {{ end }}
 
+        {{ if .Site.Params.untappd }}
+        <a href="https://untappd.com/user/{{ .Site.Params.untappd}}" rel=me target="_blank">
+            <img class="icon" src="{{ .Site.BaseURL }}img/untappd.svg" alt="untappd" />
+        </a>
+        {{ end }}
+
         {{ if .Site.Params.email }}
             <a href="mailto:{{ .Site.Params.email }}">
                 <img class="icon" src="{{ .Site.BaseURL }}img/email.svg" alt="email" />
