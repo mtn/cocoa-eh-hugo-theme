@@ -2,14 +2,13 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
 {{ if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
 
 {{ if .Site.Params.twitter }}
     <meta property="twitter:site" content="@{{.Site.Params.twitter}}">
 {{ end }}
 <meta property="og:site_name" content="{{ .Site.Title }}" />
-<meta property="og:locale" content="nn_NO" />
+<meta property="og:locale" content="{{ .Site.LanguageCode }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }}" />

@@ -18,9 +18,11 @@
                     {{ if not .Params.noauthor }}
                         {{ if .Params.author }}
                         <div class="author middot" title="{{ .Params.Author }}">{{ .Params.author }}</div>
-                        {{end}}
-                    {{end}}
+                        {{ end }}
+                    {{ end }}
+                    {{ if not .Site.Params.noreadingtime }}
                     <div class="reading-time middot">{{ .ReadingTime }} minute read</div>
+                    {{ end }}
                     <div class="tags">
                         <ul>
                           {{ range .Params.tags }}
