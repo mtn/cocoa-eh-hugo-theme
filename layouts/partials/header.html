@@ -14,19 +14,19 @@
         {{ if (not (isset .Site.Params "logofile")) }}
         <a href="https://github.com/mtn/cocoa-eh-hugo-theme/wiki/Configuration#logo">Logo HOWTO</a>
         {{ else if ne .Site.Params.logofile "" }}
-        <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" alt="logo"></a>
+        <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | relURL }}" alt="logo"></a>
         {{ end }}
         <div class="content">
             <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
             <nav>
                 <ul>
                     {{ if (and (ne (len (where .Site.RegularPages "Section" "blog")) 0) (not (in .Site.Params.exclude_headings "blog"))) }}
-                            <li><a href="{{ .Site.BaseURL }}blog/">Blog</a></li>
+                            <li><a href="/blog/">Blog</a></li>
                     {{ end }}
                     {{ range $.Site.Home.Sections }}
                         {{ range first 1 (where .Pages "Section" "ne" "")}}
                             {{ if (and (ne .Section "blog") (not (in .Site.Params.exclude_headings (lower .Section))))}}
-                            <li><a href="{{ .Section | urlize | absURL }}">{{ .Section }}</a></li>
+                            <li><a href="{{ .Section | urlize | relURL }}">{{ .Section }}</a></li>
                             {{ end }}
                         {{ end }}
                     {{ end }}
