@@ -1,5 +1,5 @@
 baseurl = "https://example.com/"
-theme = "cocoa-eh"
+theme = "../.."
 builddrafts = true
 canonifyurls = true
 contentdir = "content"
@@ -10,6 +10,7 @@ author = "Alexis Tacnet"
 title = "Cocoa Enhanced"
 disqusshortname = ""
 pluralizelisttitles = false
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [permalinks]
 blog = "blog/:slug/"
