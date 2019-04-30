@@ -4,7 +4,7 @@
 
 **Cocoa Enhanced** is a clean, fast, and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with cool typography. The main goal of this theme is to be simple and fast but also highly customizable.
 
-A demo is available [here](https://kodewolf.com).
+A demo is available [here](https://themes.gohugo.io/theme/cocoa-eh-hugo-theme/).
 
 > This is a fork from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements.
 
