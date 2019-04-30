@@ -16,9 +16,9 @@
 
         {{ if .Site.Params.copyright }}
             {{ if .Site.Params.copyrightUrl }}
-                <a href="{{ .Site.Params.copyrightUrl }}">{{ .Site.Params.copyright }}</a>
+                <a href="{{ .Site.Params.copyrightUrl }}">{{ replace .Site.Params.copyright "{year}" now.Year }}</a>
             {{ else }}
-                <a href="{{ .Site.BaseURL }}license">{{ .Site.Params.copyright }}</a>
+                <a href="{{ .Site.BaseURL }}license">{{ replace .Site.Params.copyright "{year}" now.Year }}</a>
             {{ end }}
         {{ end }}
 
