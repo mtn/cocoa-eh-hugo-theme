@@ -14,12 +14,14 @@
                 {{ $sectionTitle := .Title }}
                 <ul>
                     {{ range .Data.Pages.GroupByDate "Jan, 2006" "desc"}}
+                      {{ if not (and (eq (len .Pages) 1) (eq (index .Pages 0).Title $sectionTitle)) }}
                         <li class="groupby">{{ .Key }}</li>
                         {{ range sort .Pages "Date" "desc" }}
                           {{ if (not (eq $sectionTitle .Title)) }}
                             {{ partial "li.html" . }}
                           {{ end }}
                         {{ end }}
+                      {{ end }}
                     {{ end }}
                 </ul>
             </div>
