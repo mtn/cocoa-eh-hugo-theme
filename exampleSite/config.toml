@@ -44,6 +44,11 @@ posts_navigation = true
 # githubRepo = "githubUsername/repositoryName/tree/master"
 small_banner_logo = false
 
+[params.utteranc]
+enable = true
+repo = "mtn/cocoa-eh-hugo-theme"
+issueTerm = "title"
+
 [params.colors]
 identifier = "#527fc1f"
 identifier_dark = "#1a3152"
