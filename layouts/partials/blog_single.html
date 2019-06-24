@@ -23,7 +23,11 @@
                     {{ if not .Site.Params.noreadingtime }}
                     <div class="reading-time middot">{{ .ReadingTime }} minute read</div>
                     {{ end }}
-                    <div class="tags">
+                    {{ if .Site.Params.tagicons }}
+                      <div class="tags tag-icons">
+                    {{ else }}
+                      <div class="tags">
+                    {{ end }}
                         <ul>
                           {{ range .Params.tags }}
                             <li class="middot"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>

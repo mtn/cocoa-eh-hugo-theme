@@ -359,6 +359,26 @@ div.main .content .front-matter .tags ul li:hover {
 div.main .content .front-matter .tags ul li a {
   color: #666666;
 }
+{{ if .Site.Params.tagicons }}
+div.main .content .front-matter .tags.tag-icons .middot {
+  margin-left: 8px;
+}
+div.main .content .front-matter .tags.tag-icons .middot a {
+  display: inline-block;
+  padding: 0 5px;
+  background: #eee;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+}
+div.main .content .front-matter .tags.tag-icons .middot a:after {
+  content: " ";
+  position: absolute;
+  right: 100%;
+  border-top: 11.2px solid transparent;
+  border-right: 11.2px solid #eee;
+  border-bottom: 11.2px solid transparent;
+}
+{{ end }}
 div.main .container.f04 {
   -webkit-justify-content: center;
   -moz-justify-content: center;
