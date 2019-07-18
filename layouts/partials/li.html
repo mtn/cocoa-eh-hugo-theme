@@ -1,8 +1,8 @@
 <li class="post-item">
     <span class="meta">{{ .Date.Format .Site.Params.dateform }}</span>
     {{ if .Params.draft }}
-    <a href="{{ .Permalink }}"><span>Draft::{{ .Title }}</span></a>
+    <a href="{{ .RelPermalink }}"><span>Draft::{{ .Title }}</span></a>
     {{ else }}
-    <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+    <a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a>
     {{ end }}
 </li>

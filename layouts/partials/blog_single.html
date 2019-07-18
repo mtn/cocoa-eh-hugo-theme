@@ -18,10 +18,16 @@
                     {{ if not .Params.noauthor }}
                         {{ if .Params.author }}
                         <div class="author middot" title="{{ .Params.Author }}">{{ .Params.author }}</div>
-                        {{end}}
-                    {{end}}
+                        {{ end }}
+                    {{ end }}
+                    {{ if not .Site.Params.noreadingtime }}
                     <div class="reading-time middot">{{ .ReadingTime }} minute read</div>
-                    <div class="tags">
+                    {{ end }}
+                    {{ if .Site.Params.tagicons }}
+                      <div class="tags tag-icons">
+                    {{ else }}
+                      <div class="tags">
+                    {{ end }}
                         <ul>
                           {{ range .Params.tags }}
                             <li class="middot"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
@@ -86,6 +92,19 @@
             <br>
             <div class="disqus">
                 {{ template "_internal/disqus.html" . }}
+            </div>
+            {{ end }}
+
+            <!-- utteranc -->
+            {{ if .Site.Params.utteranc.enable }}
+            <div class="post bg-white">
+                <script src="https://utteranc.es/client.js"
+                    repo= "{{ .Site.Params.utteranc.repo }}"
+                    issue-term="{{ .Site.Params.utteranc.issueTerm }}"
+                    theme="{{ default "github-light" .Site.Params.utteranc.theme }}"
+                    crossorigin="anonymous"
+                    async>
+                </script>
             </div>
             {{ end }}
 

@@ -1,5 +1,5 @@
 baseurl = "https://example.com/"
-theme = "cocoa-eh"
+theme = "../.."
 builddrafts = true
 canonifyurls = true
 contentdir = "content"
@@ -10,6 +10,7 @@ author = "Alexis Tacnet"
 title = "Cocoa Enhanced"
 disqusshortname = ""
 pluralizelisttitles = false
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [permalinks]
 blog = "blog/:slug/"
@@ -18,7 +19,7 @@ blog = "blog/:slug/"
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Example blog"
-copyright = "Copyright © 2015 Nishanth Shanmugham"
+copyright = "Copyright © 2015-{year} Nishanth Shanmugham"
 # copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
 logofile = "img/logo.png"
 faviconfile = "img/logo.png"
@@ -43,6 +44,11 @@ posts_navigation = true
 # issoHost = "comments.domain.tld:1234"
 # githubRepo = "githubUsername/repositoryName/tree/master"
 small_banner_logo = false
+
+[params.utteranc]
+enable = true
+repo = "mtn/cocoa-eh-hugo-theme"
+issueTerm = "title"
 
 [params.colors]
 identifier = "#527fc1f"
