@@ -12,6 +12,17 @@
             </div>
         {{ end }}
 
+        {{ if .Site.Params.gitlabRepo }}
+            <div class="copyright">
+            {{ $length := len ( split .Site.Params.gitlabRepo "/" ) }}
+            {{ if eq $length 2 }}
+                <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/tree/master/content/{{ replace .File.Path "\\" "/" }}" target="_blank">View this post on gitlab</a>
+            {{ else }}
+                <a href="https://gitlab.com/{{ .Site.Params.gitlabRepo }}/content/{{ replace .File.Path "\\" "/" }}" target="_blank">View this post on gitlab</a>
+            {{ end }}
+            </div>
+        {{ end }}
+
         <div class="copyright">
 
         {{ if .Site.Params.copyright }}
