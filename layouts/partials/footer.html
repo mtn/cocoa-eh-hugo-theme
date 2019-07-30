@@ -49,6 +49,12 @@
             </a>
         {{ end }}
 
+        {{ if .Site.Params.twitch }}
+            <a href="https://www.twitch.tv/{{ .Site.Params.twitch }}" rel=me target="_blank">
+                <img class="icon" src="{{ .Site.BaseURL }}img/twitch.png" alt="twitch" />
+            </a>
+        {{ end }}
+
         {{ if .Site.Params.facebook }}
             <a href="https://facebook.com/{{ .Site.Params.facebook }}" rel=me target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/facebook.svg" alt="facebook" />
