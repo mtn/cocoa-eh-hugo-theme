@@ -5,7 +5,7 @@ description = "Cocoa Enhanced is a clean, fast and responsive theme with cool ty
 homepage = "https://github.com/fuegowolf/cocoa-eh-hugo-theme"
 tags = ["clean", "fast", "responsive", "typography"]
 features = ["flexible", "fast", "highlights", "progressive images", "disqus"]
-min_version = 0.20.2
+min_version = "0.20.2"
 
 [author]
     name = "Alexis Tacnet"
