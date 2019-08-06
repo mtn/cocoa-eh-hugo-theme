@@ -9,7 +9,11 @@
 </style>
 </head>
 <body>
-    <img src={{ .Site.Params.logofile }} class="logo" alt="logo" />
+    {{ if (not (isset .Site.Params "logofile")) }}
+    <a href="https://github.com/mtn/cocoa-eh-hugo-theme/wiki/Configuration#logo">Logo HOWTO</a>
+    {{ else if ne .Site.Params.logofile "" }}
+    <img class="logo" src="{{ .Site.Params.logofile | relURL }}" alt="logo">
+    {{ end }}
     <div class="container f04">
         <div class="content">
             <div class="header column">
