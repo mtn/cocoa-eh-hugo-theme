@@ -289,7 +289,11 @@ div.main .content .title-container {
   justify-content: space-between;
 }
 div.main .content .posts {
-  {{ $nbPosts := len (where .Data.Pages "Params.best" true)  }}
+  {{ $pages := .Data.Pages }}
+  {{ if .IsHome }}
+  {{ $pages = .Site.RegularPages }}
+  {{ end }}
+  {{ $nbPosts := len (where $pages "Params.best" true)  }}
   {{ if gt $nbPosts 0 }}
   margin-bottom: 4em;
   {{ end }}
