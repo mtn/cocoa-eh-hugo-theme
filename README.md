@@ -71,6 +71,10 @@ hugo -t cocoa-eh
 
 If you want a simple blog you can just use the `exampleSite`. The [wiki](https://github.com/mtn/cocoa-eh-hugo-theme/wiki) includes helpful details should you need more.
 
+## Contributing
+
+See the [contributing guidelines](CONTRIBUTING.md).
+
 ## License
 
 Licensed under the MIT License. See the [LICENSE](https://github.com/mtn/cocoa-eh-hugo-theme/blob/master/LICENSE) file for more details.
