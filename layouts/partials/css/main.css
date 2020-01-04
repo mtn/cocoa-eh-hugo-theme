@@ -523,6 +523,9 @@ div.main .content .markdown h6 {
   margin-bottom: 1rem;
   letter-spacing: none;
 }
+pre {
+  overflow-x: auto;
+}
 div.main .content .markdown code,
 div.main .content .markdown pre {
   font-family: 'Menlo', monospace;
