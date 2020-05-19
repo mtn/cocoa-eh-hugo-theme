@@ -1,14 +1,3 @@
-{{ if not .Site.Params.disablefancyfonts }}
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-  WebFont.load({
-    google: {
-      families: ['Raleway:400,600,700', 'Merriweather:300,300i,700,700i', 'Ubuntu+Mono:400,700']
-    }
-  });
-</script>
-{{ end }}
-
 {{ if .Site.Params.highlightjs }}
   <script src="{{ .Site.BaseURL }}js/highlight.min.js" defer></script>
   {{ range .Site.Params.highlightjslanguages }}
