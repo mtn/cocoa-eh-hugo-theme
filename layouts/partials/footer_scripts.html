@@ -1,4 +1,4 @@
-{{ if not .Site.Params.disablefancyfonts }}
+{{ if (and (not .Site.Params.disablefancyfonts) (not .Site.Params.disablegooglefonts)) }}
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({

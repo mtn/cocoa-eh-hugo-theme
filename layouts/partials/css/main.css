@@ -747,8 +747,116 @@ kbd {
 
 /* Fonts */
 
-{{ if not .Site.Params.disablefancyfonts  }}
-.wf-raleway-n4-active body, 
+{{ if not .Site.Params.disablefancyfonts }}
+
+{{ if .Site.Params.disablegooglefonts }}
+@font-face {
+  font-family: 'Raleway';
+  src: url('{{ .Site.BaseURL }}fonts/Raleway-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('{{ .Site.BaseURL }}fonts/Raleway-Italic.ttf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('{{ .Site.BaseURL }}fonts/Raleway-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('{{ .Site.BaseURL }}fonts/Raleway-SemiBoldItalic.ttf');
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('{{ .Site.BaseURL }}fonts/Raleway-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('{{ .Site.BaseURL }}fonts/Raleway-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('{{ .Site.BaseURL }}fonts/Merriweather-Light.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('{{ .Site.BaseURL }}fonts/Merriweather-LightItalic.ttf');
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('{{ .Site.BaseURL }}fonts/Merriweather-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('{{ .Site.BaseURL }}fonts/Merriweather-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('{{ .Site.BaseURL }}fonts/UbuntuMono-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('{{ .Site.BaseURL }}fonts/UbuntuMono-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+body,
+div.header nav ul a,
+div.main .content .page-heading,
+div.main .container.f04 .content .num,
+div.main .content .markdown h1,
+div.main .content .markdown h2,
+div.main .content .markdown h3,
+div.main .content .markdown h4,
+div.main .content .markdown h5,
+div.main .content .markdown h6 {
+      font-family: 'Raleway';
+}
+
+div.main .content .markdown {
+      font-family: 'Merriweather';
+}
+
+div.main .content .markdown code,
+div.main .content .markdown pre {
+      font-family: 'Ubuntu Mono';
+}
+{{ else }}
+.wf-raleway-n4-active body,
 .wf-raleway-n4-active div.header nav ul a,
 .wf-raleway-n7-active div.main .content .page-heading,
 .wf-raleway-n2-active div.main .container.f04 .content .num,
@@ -769,4 +877,5 @@ kbd {
 .wf-ubuntu-mono-n4-active div.main .content .markdown pre {
       font-family: 'Ubuntu Mono';
 }
+{{ end }}
 {{ end  }}
