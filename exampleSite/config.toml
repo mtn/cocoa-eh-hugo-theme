@@ -44,6 +44,7 @@ posts_navigation = true
 # issoHost = "comments.domain.tld:1234"
 # githubRepo = "githubUsername/repositoryName/tree/master"
 small_banner_logo = false
+tableofcontents = true
 
 [params.utteranc]
 enable = true

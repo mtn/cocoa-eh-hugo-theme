@@ -1,0 +1,33 @@
+{{/* https://gist.github.com/skyzyx/a796d66f6a124f057f3374eff0b3f99a */}}
+{{/* https://github.com/gohugoio/hugo/issues/1778 */}}
+
+{{/* ignore empty links with + */}}
+{{ $headers := findRE "<h[2-4].*?>(.|\n])+?</h[2-4]>" .Content }}
+{{ .Scratch.Set "last_level" 1 }}
+
+{{/* at least one header to link to */}}
+{{ $has_headers := ge (len $headers) 1 }}
+{{ if $has_headers }}
+<aside class="toc">
+     <details>
+    <summary>
+    <b>Table of Contents</b>
+    </summary>
+    {{ range $headers }}
+        {{ $header := . }}
+        {{ $base := ($.Page.File.LogicalName) }}
+        {{ $anchorId := ($header | plainify | htmlUnescape | anchorize) }}
+        {{ $href := delimit (slice $base $anchorId) "#" | string }}
+        {{ range findRE "[2-4]" . 1 }}
+            {{ $next_heading := (int .) }}
+            {{ if gt $next_heading ($.Scratch.Get "last_level") }}
+                <ul class="toc-h{{ . }}">
+            {{ else if lt $next_heading ($.Scratch.Get "last_level") }}
+                </ul>
+            {{ end }}
+            <li><a href="{{ relref $.Page $href }}">{{ $header | plainify | htmlUnescape }}</a></li>
+            {{ $.Scratch.Set "last_level" $next_heading }}
+        {{ end }}
+    {{ end }}
+</aside>
+{{ end }}
